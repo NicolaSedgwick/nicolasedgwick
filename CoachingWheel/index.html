@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Coaching Wheel</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root { --primary: #2563eb; --secondary: #10b981; --bg: #f8fafc; }
+        body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); padding: 20px; color: #1e293b; }
+        .container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .controls { display: flex; flex-direction: column; gap: 12px; }
+        .segment-row { display: grid; grid-template-columns: 1.5fr 1fr 1fr 40px; gap: 15px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid #e2e8f0; }
+        input[type="text"] { padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; width: 100%; font-size: 0.9rem; }
+        input[type="range"] { width: 100%; cursor: pointer; }
+        button { cursor: pointer; padding: 10px; border: none; border-radius: 6px; font-weight: bold; transition: 0.2s; }
+        .btn-add { background: var(--primary); color: white; margin-top: 15px; width: 100%; }
+        .btn-add:hover { background: #1d4ed8; }
+        .btn-del { background: #fee2e2; color: #ef4444; font-size: 1.2rem; line-height: 1; }
+        .btn-del:hover { background: #ef4444; color: white; }
+        .btn-print { background: #334155; color: white; width: 100%; margin-top: 20px; font-size: 1rem; }
+        .btn-print:hover { background: #1e293b; }
+        label { font-size: 0.75rem; font-weight: 600; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px; }
+        h1 { margin-top: 0; color: #0f172a; }
+        
+        @media print {
+            .no-print { display: none; }
+            .container { grid-template-columns: 1fr; }
+            .card { box-shadow: none; border: none; padding: 0; }
+            body { background: white; padding: 0; }
+            canvas { max-width: 100% !important; height: auto !important; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="no-print" style="text-align: center; margin-bottom: 30px;">
+    <h1>Coaching Wheel: Gap Analysis</h1>
+    <p>Adjust categories and sliders. Print to PDF to save your results privately.</p>
+</div>
+
+<div class="container">
+    <div class="card no-print">
+        <h3>1. Configure Your Wheel</h3>
+        <div id="segmentsList" class="controls">
+            </div>
+        <button class="btn-add" onclick="addSegment()">+ Add New Category</button>
+        <button class="btn-print" onclick="window.print()">Download / Print Results</button>
+    </div>
+
+    <div class="card">
+        <h3 style="text-align: center; margin-bottom: 20px;">Visual Balance</h3>
+        <canvas id="wheelChart"></canvas>
+    </div>
+</div>
+
+<script>
+    // Initial categories
+    let categories = ["Category 1", "Category 2", "Category 3", "Category 4", "Category 5", "Category 6", "Category 7", "Category 8"];
+    // All scores initialized to 0 as requested
+    let nowScores = [0, 0, 0, 0, 0, 0, 0, 0];
+    let wantScores = [0, 0, 0, 0, 0, 0, 0, 0];
+    let chart;
+
+    function initChart() {
+        const ctx = document.getElementById('wheelChart').getContext('2d');
+        chart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: categories,
+                datasets: [{
+                    label: 'Where I am NOW',
+                    data: nowScores,
+                    fill: true,
+                    backgroundColor: 'rgba(37, 99, 235, 0.2)',
+                    borderColor: 'rgb(37, 99, 235)',
+                    pointBackgroundColor: 'rgb(37, 99, 235)',
+                    borderWidth: 2
+                }, {
+                    label: 'Where I WANT to be',
+                    data: wantScores,
+                    fill: true,
+                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    borderColor: 'rgb(16, 185, 129)',
+                    borderDash: [5, 5],
+                    pointBackgroundColor: 'rgb(16, 185, 129)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scales: { 
+                    r: { 
+                        min: 0, 
+                        max: 10, 
+                        beginAtZero: true,
+                        ticks: { stepSize: 1, display: true },
+                        suggestedMin: 0,
+                        suggestedMax: 10
+                    } 
+                },
+                plugins: { 
+                    legend: { position: 'bottom', labels: { boxWidth: 20, padding: 20 } } 
+                },
+                maintainAspectRatio: true
+            }
+        });
+    }
+
+    function renderControls() {
+        const list = document.getElementById('segmentsList');
+        list.innerHTML = '';
+        categories.forEach((cat, i) => {
+            const row = document.createElement('div');
+            row.className = 'segment-row';
+            row.innerHTML = `
+                <input type="text" value="${cat}" placeholder="Category Name" oninput="updateLabel(${i}, this.value)">
+                <div>
+                    <label>Now</label>
+                    <input type="range" min="0" max="10" step="1" value="${nowScores[i]}" oninput="updateScore(${i}, 'now', this.value)">
+                </div>
+                <div>
+                    <label>Goal</label>
+                    <input type="range" min="0" max="10" step="1" value="${wantScores[i]}" oninput="updateScore(${i}, 'want', this.value)">
+                </div>
+                <button class="btn-del" onclick="removeSegment(${i})" title="Delete">&times;</button>
+            `;
+            list.appendChild(row);
+        });
+    }
+
+    function updateLabel(index, val) {
+        categories[index] = val;
+        chart.data.labels = categories;
+        chart.update();
+    }
+
+    function updateScore(index, type, val) {
+        const numVal = parseInt(val);
+        if(type === 'now') nowScores[index] = numVal;
+        else wantScores[index] = numVal;
+        
+        chart.data.datasets[0].data = nowScores;
+        chart.data.datasets[1].data = wantScores;
+        chart.update();
+    }
+
+    function addSegment() {
+        categories.push("New Category");
+        nowScores.push(0); // Default new to 0
+        wantScores.push(0); // Default new to 0
+        renderControls();
+        chart.update();
+    }
+
+    function removeSegment(index) {
+        if(categories.length <= 3) {
+            alert("A wheel needs at least 3 segments to be useful!");
+            return;
+        }
+        categories.splice(index, 1);
+        nowScores.splice(index, 1);
+        wantScores.splice(index, 1);
+        renderControls();
+        chart.update();
+    }
+
+    // Initialize everything
+    window.onload = () => {
+        initChart();
+        renderControls();
+    };
+</script>
+</body>
+</html>
