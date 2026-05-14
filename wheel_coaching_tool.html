@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Interactive Coaching Wheel&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root { --primary: #2563eb; --secondary: #10b981; --bg: #f8fafc; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); padding: 20px; color: #1e293b; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.controls { display: flex; flex-direction: column; gap: 15px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.segment-row { display: grid; grid-template-columns: 1.5fr 1fr 1fr 40px; gap: 10px; align-items: center; padding-bottom: 10px; border-bottom: 1px solid #e2e8f0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>input[type="text"] { padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; width: 100%; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>input[type="range"] { width: 100%; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>button { cursor: pointer; padding: 10px; border: none; border-radius: 6px; font-weight: bold; transition: 0.2s; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-add { background: var(--primary); color: white; margin-top: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-del { background: #ef4444; color: white; padding: 5px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-print { background: #334155; color: white; width: 100%; margin-top: 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>label { font-size: 0.8rem; color: #64748b; }</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media print {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.no-print { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.container { grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.card { box-shadow: none; border: none; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>body { background: white; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="no-print" style="text-align: center; margin-bottom: 20px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Interactive Coaching Wheel&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Define your categories, set your scores, and print your results.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card no-print"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Wheel Settings&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="segmentsList" class="controls"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-add" onclick="addSegment()"&gt;+ Add Segment&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-print" onclick="window.print()"&gt;Print / Save as PDF&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;canvas id="wheelChart"&gt;&lt;/canvas&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let categories = ["Career", "Finance", "Health", "Friends", "Family", "Romance", "Growth", "Fun"];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let nowScores = [5, 4, 7, 6, 8, 3, 5, 6];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let wantScores = [8, 8, 9, 8, 9, 8, 9, 9];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let chart;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function initChart() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const ctx = document.getElementById('wheelChart').getContext('2d');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chart = new Chart(ctx, {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>type: 'radar',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>data: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>labels: categories,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>datasets: [{</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>label: 'Where I am NOW',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>data: nowScores,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>fill: true,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>backgroundColor: 'rgba(37, 99, 235, 0.2)',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>borderColor: 'rgb(37, 99, 235)',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>pointBackgroundColor: 'rgb(37, 99, 235)',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}, {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>label: 'Where I WANT to be',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>data: wantScores,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>fill: true,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>backgroundColor: 'rgba(16, 185, 129, 0.1)',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>borderColor: 'rgb(16, 185, 129)',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>borderDash: [5, 5],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>pointBackgroundColor: 'rgb(16, 185, 129)',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>options: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>scales: { r: { min: 0, max: 10, ticks: { stepSize: 1 } } },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>plugins: { legend: { position: 'bottom' } }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderControls() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const list = document.getElementById('segmentsList');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>list.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>categories.forEach((cat, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const row = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>row.className = 'segment-row';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>row.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="text" value="${cat}" oninput="updateLabel(${i}, this.value)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;&lt;label&gt;Now&lt;/label&gt;&lt;input type="range" min="0" max="10" value="${nowScores[i]}" oninput="updateScore(${i}, 'now', this.value)"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;&lt;label&gt;Goal&lt;/label&gt;&lt;input type="range" min="0" max="10" value="${wantScores[i]}" oninput="updateScore(${i}, 'want', this.value)"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn-del" onclick="removeSegment(${i})"&gt;×&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>list.appendChild(row);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function updateLabel(index, val) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>categories[index] = val;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chart.data.labels = categories;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chart.update();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function updateScore(index, type, val) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(type === 'now') nowScores[index] = val;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>else wantScores[index] = val;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chart.data.datasets[0].data = nowScores;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chart.data.datasets[1].data = wantScores;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chart.update();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function addSegment() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>categories.push("New Item");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nowScores.push(5);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>wantScores.push(8);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>renderControls();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chart.update();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function removeSegment(index) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>categories.splice(index, 1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nowScores.splice(index, 1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>wantScores.splice(index, 1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>renderControls();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chart.update();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>initChart();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>renderControls();</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
