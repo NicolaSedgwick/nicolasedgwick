@@ -62,22 +62,8 @@
         <div id="segmentsList" class="controls"></div>
         
         <button class="btn-add" onclick="addSegment()">+ Add Category</button>
-        <button class="btn-print" onclick="preparePrint()">Save as PDF / Print Results</button>
-
-        <div class="privacy-note">
-            <strong>🔒 Zero-Storage Privacy Promise:</strong> 
-            Your reflections are your own. This tool runs entirely in your browser; no data is ever sent to a server, stored, or seen by anyone else unless you choose to share your printed PDF.
-        </div>
-    </div>
-
-    <div class="card">
-        <h3 id="chartTitle" style="text-align: center; margin-bottom: 10px;">Your Growth Map</h3>
-        <canvas id="wheelChart"></canvas>
-        <div id="timestamp"></div>
-
         <div class="no-print">
-            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #e2e8f0;">
-            
+         
             <h3>2. The Gap Conversation</h3>
             <div class="info-section">
                 <strong>What do you see in the gaps?</strong><br>
@@ -99,6 +85,19 @@
                 This chart is a snapshot of exactly where you are today. By saving this as a PDF, you are creating a time capsule. In 3 months, you can look back and see how far you've traveled.
             </div>
         </div>
+    </div>
+
+    <div class="card">
+        <h3 id="chartTitle" style="text-align: center; margin-bottom: 10px;">Your Growth Map</h3>
+        <canvas id="wheelChart"></canvas>
+        <div id="timestamp"></div>
+
+            <div class="privacy-note">
+                <strong>🔒 Zero-Storage Privacy Promise:</strong> 
+                Your reflections are your own. This tool runs entirely in your browser; no data is ever sent to a server, stored, or seen by anyone else unless you choose to share your printed PDF.
+            </div>   
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #e2e8f0;">
+                <button class="btn-print" onclick="preparePrint()">Save as PDF / Print Results</button>
     </div>
 </div>
 
