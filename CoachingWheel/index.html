@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Coaching Wheel</title>
+    <title>Nicola Sedgwick Coaching - Interactive Wheel</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root { --primary: #2563eb; --secondary: #10b981; --bg: #f1f5f9; --text: #1e293b; }
@@ -56,8 +56,8 @@
         .btn-del { background: #fee2e2; color: #ef4444; font-size: 1.2rem; }
         
         #timestamp { font-size: 0.9rem; color: #64748b; margin-top: 15px; text-align: center; display: none; font-weight: bold; }
+        .print-footer { display: none; text-align: center; font-weight: bold; margin-top: 30px; color: #1e293b; border-top: 1px solid #eee; padding-top: 10px; }
 
-        /* Bottom Section Grid */
         .advice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 
         /* Responsive & Print */
@@ -68,13 +68,23 @@
         }
 
         @media print {
+            @page { margin: 1cm; }
             .no-print { display: none; }
             .container { display: block; width: 100%; }
-            .card { box-shadow: none; border: none; padding: 10px 0; margin-bottom: 20px; }
+            .card { box-shadow: none; border: none; padding: 10px 0; margin-bottom: 10px; width: 100%; }
+            
+            /* Centering the radar in PDF */
+            #wheelChart { 
+                max-width: 550px !important; 
+                margin: 0 auto !important; 
+                display: block !important;
+            }
+
             .full-width { width: 100%; }
             .advice-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
             body { background: white; padding: 0; }
             #timestamp { display: block; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
+            .print-footer { display: block; }
             .val-indicator { color: black; }
             .info-section { background: #fdfdfd; border: 1px solid #eee; border-left: 4px solid var(--primary); page-break-inside: avoid; }
         }
@@ -83,7 +93,7 @@
 <body>
 
 <div class="no-print" style="text-align: center; margin-bottom: 30px;">
-    <h1>The Wheel of Life: Interactive Gap Analysis</h1>
+    <h1>Nicola Sedgwick Coaching: Interactive Wheel</h1>
     <p>A tool for self-reflection, goal setting, and growth.</p>
 </div>
 
@@ -134,10 +144,12 @@
                 </div>
             </div>
         </div>
+        <div class="print-footer">Nicola Sedgwick Coaching</div>
     </div>
 </div>
 
 <script>
+    // Updated default categories
     let categories = ["Category 1", "Category 2", "Category 3", "Category 4", "Category 5", "Category 6", "Category 7", "Category 8"];
     let nowScores = [0, 0, 0, 0, 0, 0, 0, 0];
     let wantScores = [0, 0, 0, 0, 0, 0, 0, 0];
@@ -238,7 +250,7 @@
         const dateString = now.toLocaleDateString('en-GB', { 
             day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' 
         });
-        document.getElementById('timestamp').innerText = "Assessment Date: " + dateString;
+        document.getElementById('timestamp').innerText = "Nicola Sedgwick Coaching - Assessment Date: " + dateString;
         window.print();
     }
 
