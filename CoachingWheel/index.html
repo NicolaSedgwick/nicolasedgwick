@@ -8,7 +8,17 @@
     <style>
         :root { --primary: #2563eb; --secondary: #10b981; --bg: #f1f5f9; --text: #1e293b; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); padding: 20px; color: var(--text); line-height: 1.5; }
-        .container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        
+        /* Grid Layout */
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 30px; 
+        }
+        .full-width { grid-column: span 2; }
+
         .card { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
         
         /* Headers & Sections */
@@ -18,11 +28,25 @@
 
         /* Controls */
         .controls { display: flex; flex-direction: column; gap: 12px; }
-        .segment-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr 40px; gap: 15px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid #f1f5f9; }
+        .segment-row { 
+            display: grid; 
+            grid-template-columns: 1.2fr 1fr 1fr 40px; 
+            gap: 25px; 
+            align-items: center; 
+            padding-bottom: 12px; 
+            border-bottom: 1px solid #f1f5f9; 
+        }
         .slider-group { position: relative; display: flex; flex-direction: column; }
         .val-indicator { font-weight: bold; color: var(--primary); font-size: 0.8rem; display: inline-block; width: 20px; }
         
-        input[type="text"] { padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; width: 100%; font-size: 0.85rem; }
+        input[type="text"] { 
+            padding: 8px; 
+            border: 1px solid #cbd5e1; 
+            border-radius: 6px; 
+            width: 100%; 
+            font-size: 0.85rem;
+            margin-right: 10px;
+        }
         input[type="range"] { width: 100%; cursor: pointer; margin-top: 5px; }
         
         /* Buttons */
@@ -31,17 +55,28 @@
         .btn-print { background: #0f172a; color: white; width: 100%; margin-top: 15px; font-size: 1rem; }
         .btn-del { background: #fee2e2; color: #ef4444; font-size: 1.2rem; }
         
-        #timestamp { font-size: 0.8rem; color: #94a3b8; margin-top: 10px; text-align: center; display: none; }
+        #timestamp { font-size: 0.9rem; color: #64748b; margin-top: 15px; text-align: center; display: none; font-weight: bold; }
 
-        @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+        /* Bottom Section Grid */
+        .advice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+
+        /* Responsive & Print */
+        @media (max-width: 900px) { 
+            .container { grid-template-columns: 1fr; } 
+            .full-width { grid-column: span 1; }
+            .advice-grid { grid-template-columns: 1fr; }
+        }
 
         @media print {
             .no-print { display: none; }
-            .container { grid-template-columns: 1fr; }
-            .card { box-shadow: none; border: none; padding: 0; }
+            .container { display: block; width: 100%; }
+            .card { box-shadow: none; border: none; padding: 10px 0; margin-bottom: 20px; }
+            .full-width { width: 100%; }
+            .advice-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
             body { background: white; padding: 0; }
-            #timestamp { display: block; }
+            #timestamp { display: block; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
             .val-indicator { color: black; }
+            .info-section { background: #fdfdfd; border: 1px solid #eee; border-left: 4px solid var(--primary); page-break-inside: avoid; }
         }
     </style>
 </head>
@@ -58,46 +93,47 @@
         <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 20px;">
             ⚠️ <strong>Note:</strong> Refreshing the page will clear all data and reset the wheel to a blank slate.
         </p>
-        
         <div id="segmentsList" class="controls"></div>
-        
         <button class="btn-add" onclick="addSegment()">+ Add Category</button>
-        <div class="no-print">
-         
-            <h3>2. The Gap Conversation</h3>
-            <div class="info-section">
-                <strong>What do you see in the gaps?</strong><br>
-                The space between "Now" and "Goal" is where your potential lives. Does the gap feel like a challenge or a burden? Does it exist because of a lack of time, energy, or focus?
-            </div>
-            
-            <div class="info-section" style="border-left-color: var(--secondary);">
-                <strong>Which gap do you want to work on first?</strong><br>
-                You don't have to fix everything at once. Pick the segment where a small improvement would have the biggest "ripple effect" on the rest of your wheel.
-            </div>
-            <h3>3. Driving Change</h3>
-            <div class="info-section" style="border-left-color: #f59e0b;">
-                <strong>What small step can you take?</strong><br>
-                What is one action you can take in the next 48 hours to start moving that score by 1 point (or more)?
-            </div>
-
-            <div class="info-section" style="border-left-color: #64748b;">
-                <strong>The PDF Time Capsule</strong><br>
-                This chart is a snapshot of exactly where you are today. By saving this as a PDF, you are creating a time capsule. In 3 months, you can look back and see how far you've traveled.
-            </div>
-        </div>
     </div>
 
     <div class="card">
+        <div id="timestamp"></div>
         <h3 id="chartTitle" style="text-align: center; margin-bottom: 10px;">Your Growth Map</h3>
         <canvas id="wheelChart"></canvas>
-        <div id="timestamp"></div>
 
-            <div class="privacy-note">
-                <strong>🔒 Zero-Storage Privacy Promise:</strong> 
-                Your reflections are your own. This tool runs entirely in your browser; no data is ever sent to a server, stored, or seen by anyone else unless you choose to share your printed PDF.
-            </div>   
-            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #e2e8f0;">
-                <button class="btn-print" onclick="preparePrint()">Save as PDF / Print Results</button>
+        <div class="privacy-note no-print">
+            <strong>🔒 Zero-Storage Privacy Promise:</strong> 
+            Your reflections are your own. This tool runs entirely in your browser; no data is ever sent to a server.
+        </div>   
+        <button class="btn-print no-print" onclick="preparePrint()">Save as PDF / Print Results</button>
+    </div>
+
+    <div class="card full-width">
+        <div class="advice-grid">
+            <div>
+                <h3>2. The Gap Conversation</h3>
+                <div class="info-section">
+                    <strong>What do you see in the gaps?</strong><br>
+                    The space between "Now" and "Goal" is where your potential lives. Does the gap feel like a challenge or a burden? Does it exist because of a lack of time, energy, or focus?
+                </div>
+                <div class="info-section" style="border-left-color: var(--secondary);">
+                    <strong>Which gap do you want to work on first?</strong><br>
+                    You don't have to fix everything at once. Pick the segment where a small improvement would have the biggest "ripple effect" on the rest of your wheel.
+                </div>
+            </div>
+            <div>
+                <h3>3. Driving Change</h3>
+                <div class="info-section" style="border-left-color: #f59e0b;">
+                    <strong>What small step can you take?</strong><br>
+                    What is one action you can take in the next 48 hours to start moving that score by 1 point (or more)?
+                </div>
+                <div class="info-section" style="border-left-color: #64748b;">
+                    <strong>The PDF Time Capsule</strong><br>
+                    This chart is a snapshot of exactly where you are today. Keep this PDF to look back in 3 months and see how far you've traveled. Growth is a journey, not a destination.
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
