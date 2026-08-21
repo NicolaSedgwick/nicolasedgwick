@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "source": "The Pony Club C Standard Test Sheets, Revised 2025",
+    "generated": "2026-08-21"
+  },
+  "cards": [
+    {
+      "id": "r01",
+      "theme": "Riding",
+      "topic": "Safety",
+      "number": 1,
+      "question": "List what you should be wearing when riding in the countryside or leading a pony on the road; explain why each item on your list is important",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r02",
+      "theme": "Riding",
+      "topic": "Safety",
+      "number": 2,
+      "question": "Show how to work safely with a pony when dismounted",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r03",
+      "theme": "Riding",
+      "topic": "Safety",
+      "number": 3,
+      "question": "Explain how you would ride in the countryside and on bridle paths, showing an awareness of farmers’ stock and crops",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "r04",
+      "theme": "Riding",
+      "topic": "Training Ponies",
+      "number": 4,
+      "question": "Explain how positive reinforcement works when training a pony",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r05",
+      "theme": "Riding",
+      "topic": "Training Ponies",
+      "number": 5,
+      "question": "Talk about how pressure and release works when training a pony",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r06",
+      "theme": "Riding",
+      "topic": "Training Ponies",
+      "number": 6,
+      "question": "Describe how you could get a pony used to something scary (desensitisation)",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "r07",
+      "theme": "Riding",
+      "topic": "Training Ponies",
+      "number": 7,
+      "question": "Understand that ponies are herd animals; give an example of when this might be a problem and how you might avoid it",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r08",
+      "theme": "Riding",
+      "topic": "Training Ponies",
+      "number": 8,
+      "question": "Describe some of the things that a pony might do if it is in pain, frightened, or insufficiently trained",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "r09",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 9,
+      "question": "Present to the test in safe, tidy turn out",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r10",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 10,
+      "question": "Check bridle, saddle, girth, and stirrups before mounting",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r11",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 11,
+      "question": "Mount and dismount correctly on both sides, using a mounting block",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r12",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 12,
+      "question": "Hold the reins correctly and at a suitable length for the work being done",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r13",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 13,
+      "question": "Ride with stirrups of a suitable length",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r14",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 14,
+      "question": "Alter stirrups when mounted",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r15",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 15,
+      "question": "Tighten girth when mounted",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r16",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 16,
+      "question": "Be working towards a balanced seat, independent of the reins",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "r17",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 17,
+      "question": "Use legs and hands as aids to increase and decrease pace",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "r18",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 18,
+      "question": "Show the difference between walking on a contact and on a long rein",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r19",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 19,
+      "question": "Ride in balance without stirrups in walk and trot",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r20",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 20,
+      "question": "Explain the difference between rhythm and tempo",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r21",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 21,
+      "question": "Describe the sequence of legs in walk, trot, canter, and gallop",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r22",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 22,
+      "question": "Show trot and canter in a balanced light seat with stirrups at a suitable length",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "r23",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 23,
+      "question": "Ride in a correct, balanced position in walk and trot over poles on the ground",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r24",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 24,
+      "question": "Ride in a correct, balanced position over small fences (maximum height, 60 cm)",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "r25",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 25,
+      "question": "Show a smooth progression from one fence to the next",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r26",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 26,
+      "question": "Know the correct distances for trotting poles (in feet, yard or metres) for the pony you are riding",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "r27",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 27,
+      "question": "Ride safely in closed and open order in a group",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r28",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 28,
+      "question": "Ride independently in the open; explain why this might be a problem for a herd animal and suggest a solution",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "r29",
+      "theme": "Riding",
+      "topic": "Riding",
+      "number": 29,
+      "question": "Ride up and down hills in walk and trot in suitable balance",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c01",
+      "theme": "Care",
+      "topic": "Safety",
+      "number": 1,
+      "question": "List what you should be wearing when riding in the countryside or leading a pony on the road; explain why each item on your list is important",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c02",
+      "theme": "Care",
+      "topic": "Safety",
+      "number": 2,
+      "question": "Show how to work safely with a pony when dismounted",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c03",
+      "theme": "Care",
+      "topic": "Safety",
+      "number": 3,
+      "question": "Show, and understand the importance of, the correct way of lifting objects in general use around the stable yard (e.g., feed and water buckets) safely",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "c04",
+      "theme": "Care",
+      "topic": "Safety",
+      "number": 4,
+      "question": "Explain how you would ride in the countryside and on bridle paths, showing an awareness of farmers’ stock and crops",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "c05",
+      "theme": "Care",
+      "topic": "Understanding What Your Pony Needs",
+      "number": 5,
+      "question": "List and explain the importance of the Five Domains of pony welfare",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c06",
+      "theme": "Care",
+      "topic": "Understanding What Your Pony Needs",
+      "number": 6,
+      "question": "Give two examples of the physical/mental effects on ponies of:\na) Poor feeding and watering\nb) Good paddocks and stables\nc) Poor health (including the effects of injuries and pain)\nd) Being unable to behave in a natural way\ne) Being scared (e.g., of people or other animals)",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c07",
+      "theme": "Care",
+      "topic": "Training Ponies",
+      "number": 7,
+      "question": "Explain how positive reinforcement works when training a pony",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c08",
+      "theme": "Care",
+      "topic": "Training Ponies",
+      "number": 8,
+      "question": "Talk about how pressure and release works when training a pony",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c09",
+      "theme": "Care",
+      "topic": "Training Ponies",
+      "number": 9,
+      "question": "Describe how you could get a pony used to something scary (desensitisation)",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "c10",
+      "theme": "Care",
+      "topic": "Training Ponies",
+      "number": 10,
+      "question": "Understand that ponies are herd animals; give an example of when this might be a problem and how you might avoid it",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c11",
+      "theme": "Care",
+      "topic": "Training Ponies",
+      "number": 11,
+      "question": "Describe some of the things that a pony might do if it is in pain, frightened, or insufficiently trained",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "c12",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 12,
+      "question": "Explain how to care for and work a pony that lives out at grass",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c13",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 13,
+      "question": "Know the main signs of health in the pony; recognise when a pony is too fat or too thin",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "c14",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 14,
+      "question": "Discuss how to check whether a paddock is safe",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "c15",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 15,
+      "question": "Explain elementary rules of feeding and watering",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c16",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 16,
+      "question": "Show when to use positive rewards (food, scratching) when training a pony’s stable manners",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c17",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 17,
+      "question": "Groom a grass kept pony",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c18",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 18,
+      "question": "Put on a tail bandage",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c19",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 19,
+      "question": "Know when a pony needs shoeing",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "c20",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 20,
+      "question": "Put on and take off turn out rugs",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c21",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 21,
+      "question": "Put on a saddle, saddle cloth, bridle, and martingale",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c22",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 22,
+      "question": "Have some knowledge of correctly fitting tack (saddle clearing the withers; height of the bit; noseband tightness)",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "c23",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 23,
+      "question": "Talk about elementary care and cleaning of saddlery (tack care after daily exercise)",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c24",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 24,
+      "question": "Know how to clean a minor wound",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c25",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 25,
+      "question": "Know which wounds require veterinary attention",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c26",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 26,
+      "question": "Understand the reasons for routine healthcare:\na) Equine influenza and tetanus vaccinations\nb) Dental care",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c27",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 27,
+      "question": "Recognise when a pony is clearly lame",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c28",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 28,
+      "question": "Recognise signs that a pony might be unhappy (stressed, worried or anxious)",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c29",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 29,
+      "question": "Understand the means of protecting a pony’s legs while travelling",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c30",
+      "theme": "Care",
+      "topic": "Pony Care",
+      "number": 30,
+      "question": "Explain how to load and unload a pony safely, considering yourself, the pony, and any helpers",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c31",
+      "theme": "Care",
+      "topic": "Environment",
+      "number": 31,
+      "question": "Explain how you can reduce waste related to looking after ponies.",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c32",
+      "theme": "Care",
+      "topic": "Environment",
+      "number": 32,
+      "question": "List the items that can be recycled in your yard",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "c33",
+      "theme": "Care",
+      "topic": "Environment",
+      "number": 33,
+      "question": "Give two examples of how water may be wasted on yards",
+      "answer": "",
+      "important": "No"
+    }
+  ]
+}
