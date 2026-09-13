@@ -284,6 +284,15 @@ select:focus-visible,
   white-space: pre-line;
 }
 .card__text--answer { font-size: 1.15rem; }
+.card__text .rich { display: block; width: 100%; }
+.card__text a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .16em;
+}
+.card__text a:hover { text-decoration-thickness: 2px; }
+.card__text a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 3px; }
 .card__text--answer.is-empty {
   font-family: var(--ui);
   font-size: .98rem;

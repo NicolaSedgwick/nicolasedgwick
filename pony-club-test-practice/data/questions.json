@@ -8,7 +8,9 @@
       "id": "r01",
       "theme": "Riding",
       "topic": "Safety",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 1,
       "question": "List what you should be wearing when riding in the countryside or leading a pony on the road; explain why each item on your list is important",
       "answer": "",
@@ -18,7 +20,9 @@
       "id": "r02",
       "theme": "Riding",
       "topic": "Safety",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 2,
       "question": "Show how to work safely with a pony when dismounted",
       "answer": "",
@@ -28,7 +32,9 @@
       "id": "r03",
       "theme": "Riding",
       "topic": "Safety",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 3,
       "question": "Explain how you would ride in the countryside and on bridle paths, showing an awareness of farmers’ stock and crops",
       "answer": "Important: \n Never ride on land without permission (unless it is your own land). Trespassing is against the law and you may be prosecuted. \n\n Countryside: \n * Always be courteous to other countryside users. \n * Always walk past (not trot or canter) as some people are frightened by ponies. \n * If it is wet you may splash people with water, or mud, if you trot or canter past. \n * Take care not to disturb wildlife, or ride over wild flowers. \n * Approach other riders slowly and ask permission to go past if you are riding more quickly. \n\n Farmland: \n * Some bridleways may cross farmland. \n * Some farmers may let you ride across their land (without bridleways) if you ask permission first. \n * Keep to the edge of the crops and always close the gates behind you (if animals are in the fields, or if you had to open the gate to pass through). \n * Always walk through fields with livestock, not trot or canter. \n * Do not ride through the middle of hers of livestock. \n * If cows or sheep are curious and come towards you, keep your pony walking steadily forward so they do not become frightened. Do not canter or gallop as cows may chase you.",
@@ -38,7 +44,9 @@
       "id": "r04",
       "theme": "Riding",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 4,
       "question": "Explain how positive reinforcement works when training a pony",
       "answer": "",
@@ -48,7 +56,9 @@
       "id": "r05",
       "theme": "Riding",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 5,
       "question": "Talk about how pressure and release works when training a pony",
       "answer": "",
@@ -58,7 +68,9 @@
       "id": "r06",
       "theme": "Riding",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 6,
       "question": "Describe how you could get a pony used to something scary (desensitisation)",
       "answer": "Desensitisation describes how you gradually get a pony to accept something they find scary, are unsure of, or which might frighten them. \n\n Desensitisation occurs when a pony is gradually allowed to get used to something that worries them over a period of time. \n\n The process of desensitisation should be done in very small steps so that the pony gets used to, and is confident with one step before you introduce the next one. \n\n Stop each session before the pony becomes stressed, or uncomfortable. Proceed through the steps over several days, not rushing the pony. \n\n Reward the pony when they accept each step so that they know they have done well.",
@@ -68,7 +80,9 @@
       "id": "r07",
       "theme": "Riding",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 7,
       "question": "Understand that ponies are herd animals; give an example of when this might be a problem and how you might avoid it",
       "answer": "",
@@ -78,7 +92,9 @@
       "id": "r08",
       "theme": "Riding",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 8,
       "question": "Describe some of the things that a pony might do if it is in pain, frightened, or insufficiently trained",
       "answer": "Pain: When ponies have pain somewhere in their body they may change the way they behave, or the way they move. \n Ponies are very good at hiding signs that they are in pain as in the wild this makes them more vulnerable to predators. \n Signs that a pony is in pain can be: \n * Limp if pain is in their foot, leg, joints, shoulders, hips or back \n * Take un-level steps \n * Carry their head to one side \n * Appear crooked when they move \n * Their posture may be tense and their back arched \n * Keep getting down to roll if the pain is in their stomach \n * Kick out after a jump \n * Keep looking at or kicking their stomach if it hurts \n * Buck, or carry their head abnormally high if ridden with a badly fitting saddle or when they have back pain \n * Take off suddenly due to a spasm of pain \n * Their facial expression may change: their jaw may be tense, their eyes stare, their ears back and their nostrils flared \n * Their nostrils may change shape and be more closed \n * The skin around their eyes may become wrinkled and their eye appear less open. \n\n Frightened: The natural reaction of a pony to something that frightens them is to take flight and run away to get as far away as possible from the scary thing. \n Different things frighten different ponies and they will only fight if they have nowhere to run and cannot escape. \n Ponies can fight by bucking, rearing, biting and kicking. \n Signs that a pony is frightened are: \n * Wide eyes \n * Flare nostrils \n * Snorting, breathing heavily \n * Bracing their neck and high head carriage \n * Clamping their tail to their hindquarters \n * Shaking \n * Unable to stay calm or stand still \n * Chewing the bit to relieve anxiety \n\n Insufficiently trained: \n Ponies are not naughty on purpose. Most of what we think of as _naughty_ behaviour is because they do not understand what we are asking them to do, or we are not giving clear aids, or commands. \n Insufficiently trained ponies may appear to be: \n * Lazy \n * Stubborn \n * Difficult to train",
@@ -88,7 +104,9 @@
       "id": "r09",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 9,
       "question": "Present to the test in safe, tidy turn out",
       "answer": "",
@@ -98,7 +116,9 @@
       "id": "r10",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 10,
       "question": "Check bridle, saddle, girth, and stirrups before mounting",
       "answer": "",
@@ -108,7 +128,9 @@
       "id": "r11",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 11,
       "question": "Mount and dismount correctly on both sides, using a mounting block",
       "answer": "",
@@ -118,7 +140,9 @@
       "id": "r12",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 12,
       "question": "Hold the reins correctly and at a suitable length for the work being done",
       "answer": "",
@@ -128,7 +152,9 @@
       "id": "r13",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 13,
       "question": "Ride with stirrups of a suitable length",
       "answer": "",
@@ -138,7 +164,9 @@
       "id": "r14",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 14,
       "question": "Alter stirrups when mounted",
       "answer": "",
@@ -148,7 +176,9 @@
       "id": "r15",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 15,
       "question": "Tighten girth when mounted",
       "answer": "",
@@ -158,7 +188,10 @@
       "id": "r16",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["D+", "C"],
+      "test_level": [
+        "D+",
+        "C"
+      ],
       "number": 16,
       "question": "Be working towards a balanced seat, independent of the reins",
       "answer": "Key building blocks for demonstrating this ability are: \n * Not pulling, leaning or balancing on the pony mouth via the reins \n * Absorbing the movement of the pony through supple joints (knees, hips, ankles) without gripping or bouncing \n * Stability in walk \n\n At D+ level the Riding Skills tested may include: \n * Walk without stirrups \n * Walk on loose rein and shorten the reins \n * Simple turns and circles in walk and trot \n * Control of a quiet pony in company on roads, and in the countryside \n * Ride up and down hills in walk \n * Canter, single pole and very small fence \n\n At C level the same Riding Skills are tested but assessors will look for: \n * Higher degree of control and harmony \n * Correct application of simple aids \n * Safe riding on roads and in the countryside.",
@@ -168,7 +201,12 @@
       "id": "r17",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["D", "D+", "C", "C+"],
+      "test_level": [
+        "D",
+        "D+",
+        "C",
+        "C+"
+      ],
       "number": 17,
       "question": "Use legs and hands as aids to increase and decrease pace",
       "answer": "Riders should use seat, legs and hand aids independently and in coordination. \n Independent means relaxed, open joints that follow the horses movements. \n Coordination means that the aids (hands, legs, seat) are matching the movements of the pony. \n\n At D or D+ test level a rider is expected to: \n * Show basic use of legs aids to go forward \n * Maintain control of a quiet pony around other ponies \n\n At C test level a rider is expected to: \n * ride in balance without relying on the reins, in addition to D test level expectations \n * Direct transitions using leg and hand aids to increase and decrease pace. \n\n At C+ test level a rider is expected to: \n * Apply aids correctly for balanced transitions, including changes of leg at canter through to trot as well as D and C test level expectations \n * Discuss the horse response to aids, rhythm, tempo and suppleness",
@@ -178,7 +216,9 @@
       "id": "r18",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 18,
       "question": "Show the difference between walking on a contact and on a long rein",
       "answer": "",
@@ -188,7 +228,9 @@
       "id": "r19",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 19,
       "question": "Ride in balance without stirrups in walk and trot",
       "answer": "",
@@ -198,7 +240,9 @@
       "id": "r20",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 20,
       "question": "Explain the difference between rhythm and tempo",
       "answer": "",
@@ -208,7 +252,9 @@
       "id": "r21",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 21,
       "question": "Describe the sequence of legs in walk, trot, canter, and gallop",
       "answer": "",
@@ -218,7 +264,9 @@
       "id": "r22",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 22,
       "question": "Show trot and canter in a balanced light seat with stirrups at a suitable length",
       "answer": "",
@@ -228,7 +276,9 @@
       "id": "r23",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 23,
       "question": "Ride in a correct, balanced position in walk and trot over poles on the ground",
       "answer": "",
@@ -238,7 +288,9 @@
       "id": "r24",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 24,
       "question": "Ride in a correct, balanced position over small fences (maximum height, 60 cm)",
       "answer": "",
@@ -248,7 +300,9 @@
       "id": "r25",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 25,
       "question": "Show a smooth progression from one fence to the next",
       "answer": "",
@@ -258,7 +312,9 @@
       "id": "r26",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 26,
       "question": "Know the correct distances for trotting poles (in feet, yard or metres) for the pony you are riding",
       "answer": "",
@@ -268,7 +324,9 @@
       "id": "r27",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 27,
       "question": "Ride safely in closed and open order in a group",
       "answer": "",
@@ -278,7 +336,9 @@
       "id": "r28",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 28,
       "question": "Ride independently in the open; explain why this might be a problem for a herd animal and suggest a solution",
       "answer": "",
@@ -288,7 +348,9 @@
       "id": "r29",
       "theme": "Riding",
       "topic": "Riding",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 29,
       "question": "Ride up and down hills in walk and trot in suitable balance",
       "answer": "",
@@ -298,7 +360,9 @@
       "id": "c01",
       "theme": "Care",
       "topic": "Safety",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 1,
       "question": "List what you should be wearing when riding in the countryside or leading a pony on the road; explain why each item on your list is important",
       "answer": "",
@@ -308,7 +372,9 @@
       "id": "c02",
       "theme": "Care",
       "topic": "Safety",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 2,
       "question": "Show how to work safely with a pony when dismounted",
       "answer": "",
@@ -318,7 +384,9 @@
       "id": "c03",
       "theme": "Care",
       "topic": "Safety",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 3,
       "question": "Show, and understand the importance of, the correct way of lifting objects in general use around the stable yard (e.g., feed and water buckets) safely",
       "answer": "When moving, or lifting, heavy objects always consider your own safety and that of anyone helping you. Always take bales from the top of the stack so that the stack does not collapse on you, and carry water buckets two at a time (and not overfilled) so that your body is balanced. \n\n How to lift heavy objects: \n * Wear gloves to protect your hands and give you a secure grip \n * Stand close to the heavy object with your feet apart to help maintain your balance \n * Square the object (e.g. bale or sack) up in front of you \n * Tuck in your chin \n * Bend your knees keeping your sprint straight. Do not bend forward over heavy objects as this will strain your back. \n * Keep your arms close to your body and lift by straightening your knees, not by using the strength in your arms, or back. \n\n Putting down heavy objects: \n * Keep the object close to your body \n * Keep your chin tucked in \n * Bend your knees \n * Lower the object to the ground \n * Let go and stand up normally. \n\n Heavy objects should always be moved around the yard using a wheel barrow, or sack barrow, rather than being carried from one point to another, or by being dragged across the ground. \n\n",
@@ -328,7 +396,9 @@
       "id": "c04",
       "theme": "Care",
       "topic": "Safety",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 4,
       "question": "Explain how you would ride in the countryside and on bridle paths, showing an awareness of farmers’ stock and crops",
       "answer": "Important: \n Never ride on land without permission (unless it is your own land). Trespassing is against the law and you may be prosecuted. \n\n Countryside: \n * Always be courteous to other countryside users. \n * Always walk past (not trot or canter) as some people are frightened by ponies. \n * If it is wet you may splash people with water, or mud, if you trot or canter past. \n * Take care not to disturb wildlife, or ride over wild flowers. \n * Approach other riders slowly and ask permission to go past if you are riding more quickly. \n\n Farmland: \n * Some bridleways may cross farmland. \n * Some farmers may let you ride across their land (without bridleways) if you ask permission first. \n * Keep to the edge of the crops and always close the gates behind you (if animals are in the fields, or if you had to open the gate to pass through). \n * Always walk through fields with livestock, not trot or canter. \n * Do not ride through the middle of hers of livestock. \n * If cows or sheep are curious and come towards you, keep your pony walking steadily forward so they do not become frightened. Do not canter or gallop as cows may chase you.",
@@ -338,7 +408,9 @@
       "id": "c05",
       "theme": "Care",
       "topic": "Understanding What Your Pony Needs",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 5,
       "question": "List and explain the importance of the Five Domains of pony welfare",
       "answer": "",
@@ -348,7 +420,9 @@
       "id": "c06",
       "theme": "Care",
       "topic": "Understanding What Your Pony Needs",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 6,
       "question": "Give two examples of the physical/mental effects on ponies of:\na) Poor feeding and watering\nb) Good paddocks and stables\nc) Poor health (including the effects of injuries and pain)\nd) Being unable to behave in a natural way\ne) Being scared (e.g., of people or other animals)",
       "answer": "",
@@ -358,7 +432,9 @@
       "id": "c07",
       "theme": "Care",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 7,
       "question": "Explain how positive reinforcement works when training a pony",
       "answer": "",
@@ -368,7 +444,9 @@
       "id": "c08",
       "theme": "Care",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 8,
       "question": "Talk about how pressure and release works when training a pony",
       "answer": "",
@@ -378,7 +456,9 @@
       "id": "c09",
       "theme": "Care",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 9,
       "question": "Describe how you could get a pony used to something scary (desensitisation)",
       "answer": "Desensitisation describes how you gradually get a pony to accept something they find scary, are unsure of, or which might frighten them. \n\n Desensitisation occurs when a pony is gradually allowed to get used to something that worries them over a period of time. \n\n The process of desensitisation should be done in very small steps so that the pony gets used to, and is confident with one step before you introduce the next one. \n\n Stop each session before the pony becomes stressed, or uncomfortable. Proceed through the steps over several days, not rushing the pony. \n\n Reward the pony when they accept each step so that they know they have done well.",
@@ -388,7 +468,9 @@
       "id": "c10",
       "theme": "Care",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 10,
       "question": "Understand that ponies are herd animals; give an example of when this might be a problem and how you might avoid it",
       "answer": "",
@@ -398,7 +480,9 @@
       "id": "c11",
       "theme": "Care",
       "topic": "Training Ponies",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 11,
       "question": "Describe some of the things that a pony might do if it is in pain, frightened, or insufficiently trained",
       "answer": "Pain: When ponies have pain somewhere in their body they may change the way they behave, or the way they move. \n Ponies are very good at hiding signs that they are in pain as in the wild this makes them more vulnerable to predators. \n Signs that a pony is in pain can be: \n * Limp if pain is in their foot, leg, joints, shoulders, hips or back \n * Take un-level steps \n * Carry their head to one side \n * Appear crooked when they move \n * Their posture may be tense and their back arched \n * Keep getting down to roll if the pain is in their stomach \n * Kick out after a jump \n * Keep looking at or kicking their stomach if it hurts \n * Buck, or carry their head abnormally high if ridden with a badly fitting saddle or when they have back pain \n * Take off suddenly due to a spasm of pain \n * Their facial expression may change: their jaw may be tense, their eyes stare, their ears back and their nostrils flared \n * Their nostrils may change shape and be more closed \n * The skin around their eyes may become wrinkled and their eye appear less open. \n\n Frightened: The natural reaction of a pony to something that frightens them is to take flight and run away to get as far away as possible from the scary thing. \n Different things frighten different ponies and they will only fight if they have nowhere to run and cannot escape. \n Ponies can fight by bucking, rearing, biting and kicking. \n Signs that a pony is frightened are: \n * Wide eyes \n * Flare nostrils \n * Snorting, breathing heavily \n * Bracing their neck and high head carriage \n * Clamping their tail to their hindquarters \n * Shaking \n * Unable to stay calm or stand still \n * Chewing the bit to relieve anxiety \n\n Insufficiently trained: \n Ponies are not naughty on purpose. Most of what we think of as _naughty_ behaviour is because they do not understand what we are asking them to do, or we are not giving clear aids, or commands. \n Insufficiently trained ponies may appear to be: \n * Lazy \n * Stubborn \n * Difficult to train",
@@ -408,7 +492,9 @@
       "id": "c12",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 12,
       "question": "Explain how to care for and work a pony that lives out at grass",
       "answer": "",
@@ -418,7 +504,9 @@
       "id": "c13",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 13,
       "question": "Know the main signs of health in the pony; recognise when a pony is too fat or too thin",
       "answer": "",
@@ -428,7 +516,9 @@
       "id": "c14",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 14,
       "question": "Discuss how to check whether a paddock is safe",
       "answer": "",
@@ -438,7 +528,9 @@
       "id": "c15",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 15,
       "question": "Explain elementary rules of feeding and watering",
       "answer": "",
@@ -448,7 +540,9 @@
       "id": "c16",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 16,
       "question": "Show when to use positive rewards (food, scratching) when training a pony’s stable manners",
       "answer": "",
@@ -458,7 +552,9 @@
       "id": "c17",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 17,
       "question": "Groom a grass kept pony",
       "answer": "",
@@ -468,7 +564,9 @@
       "id": "c18",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 18,
       "question": "Put on a tail bandage",
       "answer": "",
@@ -478,7 +576,9 @@
       "id": "c19",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 19,
       "question": "Know when a pony needs shoeing",
       "answer": "",
@@ -488,27 +588,34 @@
       "id": "c20",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 20,
       "question": "Put on and take off turn out rugs",
-      "answer": "<a href='https://www.youtube.com/watch?v=L3O4tSzrE1I' target='_blank'>YouTube video</a> on The Pony Club channel for Putting on Rugs",
+      "answer": "[YouTube video](https://www.youtube.com/watch?v=L3O4tSzrE1I) on The Pony Club channel for Putting on Rugs",
       "important": "No"
     },
     {
       "id": "c21",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C", "C+"],
+      "test_level": [
+        "C",
+        "C+"
+      ],
       "number": 21,
       "question": "Put on a saddle, saddle cloth, bridle, and martingale",
-      "answer": "<a href='https://www.youtube.com/watch?v=IN88Jp5tRKA' target='_blank'>YouTube video</a> for B test training from Sasha Hargreaves covering correct methods of putting on saddle, bridle and martingale",
+      "answer": "[YouTube video](https://www.youtube.com/watch?v=IN88Jp5tRKA) for B test training from Sasha Hargreaves covering correct methods of putting on saddle, bridle and martingale",
       "important": "No"
     },
     {
       "id": "c22",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 22,
       "question": "Have some knowledge of correctly fitting tack (saddle clearing the withers; height of the bit; noseband tightness)",
       "answer": "",
@@ -518,7 +625,9 @@
       "id": "c23",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 23,
       "question": "Talk about elementary care and cleaning of saddlery (tack care after daily exercise)",
       "answer": "",
@@ -528,7 +637,9 @@
       "id": "c24",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 24,
       "question": "Know how to clean a minor wound",
       "answer": "",
@@ -538,7 +649,9 @@
       "id": "c25",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 25,
       "question": "Know which wounds require veterinary attention",
       "answer": "",
@@ -548,7 +661,9 @@
       "id": "c26",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 26,
       "question": "Understand the reasons for routine healthcare:\na) Equine influenza and tetanus vaccinations\nb) Dental care",
       "answer": "",
@@ -558,7 +673,9 @@
       "id": "c27",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 27,
       "question": "Recognise when a pony is clearly lame",
       "answer": "",
@@ -568,7 +685,9 @@
       "id": "c28",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 28,
       "question": "Recognise signs that a pony might be unhappy (stressed, worried or anxious)",
       "answer": "",
@@ -578,7 +697,9 @@
       "id": "c29",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 29,
       "question": "Understand the means of protecting a pony’s legs while travelling",
       "answer": "",
@@ -588,7 +709,9 @@
       "id": "c30",
       "theme": "Care",
       "topic": "Pony Care",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 30,
       "question": "Explain how to load and unload a pony safely, considering yourself, the pony, and any helpers",
       "answer": "",
@@ -598,7 +721,9 @@
       "id": "c31",
       "theme": "Care",
       "topic": "Environment",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 31,
       "question": "Explain how you can reduce waste related to looking after ponies.",
       "answer": "",
@@ -608,7 +733,9 @@
       "id": "c32",
       "theme": "Care",
       "topic": "Environment",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 32,
       "question": "List the items that can be recycled in your yard",
       "answer": "",
@@ -618,7 +745,9 @@
       "id": "c33",
       "theme": "Care",
       "topic": "Environment",
-      "test_level": ["C"],
+      "test_level": [
+        "C"
+      ],
       "number": 33,
       "question": "Give two examples of how water may be wasted on yards",
       "answer": "",

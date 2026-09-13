@@ -133,6 +133,37 @@
 
   /* ---------- rendering ---------- */
 
+  // Answers are plain text, not HTML — a [label](https://url) in questions.json
+  // becomes a real link. Nothing is ever inserted as markup, so a stray angle
+  // bracket in an answer stays a stray angle bracket.
+  var LINK_RE = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+
+  function renderRich(text, target) {
+    target.textContent = '';
+    // .card__text is a flex container, so everything goes inside one block
+    // child; loose text nodes would each become their own flex item.
+    var wrap = document.createElement('span');
+    wrap.className = 'rich';
+    var last = 0, m;
+    LINK_RE.lastIndex = 0;
+    while ((m = LINK_RE.exec(text)) !== null) {
+      if (m.index > last) wrap.appendChild(document.createTextNode(text.slice(last, m.index)));
+      var a = document.createElement('a');
+      a.href = m[2];
+      a.textContent = m[1];
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      wrap.appendChild(a);
+      last = m.index + m[0].length;
+    }
+    if (last < text.length) wrap.appendChild(document.createTextNode(text.slice(last)));
+    target.appendChild(wrap);
+  }
+
+  function plainText(text) {            // for read-aloud: say the label, not the URL
+    return String(text).replace(LINK_RE, '$1');
+  }
+
   function setFlipped(on) {
     on = !!on;
     el.card.classList.toggle('is-flipped', on);
@@ -145,7 +176,7 @@
       var showing = (face === 'back') === on;
       var node = document.querySelector('.card__face--' + face);
       node.setAttribute('aria-hidden', showing ? 'false' : 'true');
-      Array.prototype.forEach.call(node.querySelectorAll('button'), function (b) {
+      Array.prototype.forEach.call(node.querySelectorAll('button, a'), function (b) {
         b.tabIndex = showing ? 0 : -1;
       });
     });
@@ -178,7 +209,7 @@
     el.backPrompt.textContent = card.question;
 
     var hasAnswer = card.answer && card.answer.trim();
-    el.backText.textContent = hasAnswer ? card.answer.trim() : EMPTY_ANSWER;
+    renderRich(hasAnswer ? card.answer.trim() : EMPTY_ANSWER, el.backText);
     el.backText.classList.toggle('is-empty', !hasAnswer);
 
     el.counter.textContent = (index + 1) + ' / ' + total;
@@ -334,17 +365,19 @@
     if (!card) return '';
     if (!el.card.classList.contains('is-flipped')) return card.question;
     var answer = card.answer && card.answer.trim();
-    return card.question + '. ' + (answer || 'No answer has been recorded for this question yet.');
+    return card.question + '. ' + (answer ? plainText(answer) : 'No answer has been recorded for this question yet.');
   }
 
   /* ---------- events ---------- */
 
   function bind() {
-    el.card.addEventListener('click', function () {
+    el.card.addEventListener('click', function (e) {
+      if (e.target.closest('a')) return;          // following a link, not flipping
       setFlipped(!el.card.classList.contains('is-flipped'));
     });
 
     el.card.addEventListener('keydown', function (e) {
+      if (e.target.closest('a')) return;          // Enter on a focused link follows it
       if (e.key === ' ' || e.key === 'Enter' || e.key === 'Spacebar') {
         e.preventDefault();
         setFlipped(!el.card.classList.contains('is-flipped'));
@@ -368,7 +401,7 @@
     el.important.addEventListener('change', buildDeck);
 
     document.addEventListener('keydown', function (e) {
-      if (/^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)) return;
+      if (/^(INPUT|SELECT|TEXTAREA|A)$/.test(e.target.tagName)) return;
       if (e.key === 'ArrowRight') { move(1); }
       else if (e.key === 'ArrowLeft') { move(-1); }
       else if (e.key === 's' || e.key === 'S') {
