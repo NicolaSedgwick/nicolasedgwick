@@ -97,40 +97,6 @@ shows as a small label on the question side of the card (`C`, or `D · D+ · C �
 C+`). Use the same short names the test sheets use — `D`, `D+`, `C`, `C+`, `B`.
 Anything the app doesn't recognise still works, it just sorts to the end of the
 dropdown. A card with an empty list simply shows no label and appears only under
-"All tests".
-
-## Publishing on GitHub Pages
-
-This app lives as a subfolder of an existing Pages site — `NicolaSedgwick/nicolasedgwick` — so Pages is already switched on and there is nothing to configure. Drop the whole `pony-club-test-practice` folder into the root of that repository and it goes live at:
-
-```
-https://nicolasedgwick.github.io/nicolasedgwick/pony-club-test-practice/
-```
-
-(If a custom domain is set on that repo, swap the first part for the domain. Settings → Pages always shows the live address.)
-
-### Uploading through the GitHub website
-
-1. Go to <https://github.com/NicolaSedgwick/nicolasedgwick>.
-2. **Add file → Upload files**.
-3. Drag the whole `pony-club-test-practice` folder onto the page. GitHub keeps the folder structure, so `data/`, `css/` and `js/` land in the right places. Check the file list shows paths like `pony-club-test-practice/data/questions.json` before continuing.
-4. Commit message: *Add Pony Club test practice app*. Commit straight to `main`.
-5. Wait a minute or two for the build, then open the address above. A hard refresh (⌘⇧R) clears any cached older version.
-
-Every commit to `main` republishes automatically — editing an answer on the GitHub website is enough to update the live app.
-
-### Why the subfolder works without changes
-
-Every path in the app is relative (`css/styles.css`, `data/questions.json`), so nothing assumes it is at the root of a site. Nothing in the folder starts with `_` and no file contains Jekyll template syntax, so GitHub's Jekyll build copies it through untouched — no `.nojekyll` file needed, which matters here because adding one at the repo root could affect the rest of the site.
-
-## Running it locally
-
-Because the app loads `data/questions.json` with `fetch`, double-clicking `index.html` will not work — browsers block file reads on `file://`. Serve the folder instead:
-
-```bash
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
 
 ## Read-aloud notes
 
