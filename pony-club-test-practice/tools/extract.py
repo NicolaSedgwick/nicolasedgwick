@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""Rebuild data/questions.json from The Pony Club C Standard test sheet PDFs.
+"""RETIRED - kept as a reference, not a tool. Does not run. See RETIRED below.
 
-    pip install pdfplumber
-    python3 tools/extract.py CTestRidingRevised2025.pdf CTestCareRevised2025.pdf
-    python3 tools/extract.py --level D+ DPlusTestRevised2025.pdf
+Built the original 62 cards in data/questions.json from the two C Standard test
+sheet PDFs (Revised 2025): section headings, numbered items including wrapped
+lines and a)/b)/c) sub-parts, and which items are set in bold.
 
-Detects the section headings, the numbered items (including wrapped lines and
-a)/b)/c) sub-parts) and which items are set in bold. Answers AND test_level
-already present in data/questions.json are carried over, matched on `id` —
-test_level is maintained by hand, so a rebuild must never flatten it. New cards
-get --level (default "C").
+It is retired because it only ever understood the C sheets' typesetting, and
+because questions.json has since grown hand-maintained content it would destroy.
+The parsing approach is still worth reading before hand-entering a new sheet -
+that is the only reason this file still exists.
 """
 
 import json
@@ -24,9 +23,32 @@ import pdfplumber
 BOLD_FONT = "CIDFont+F2"          # the bold face used in these sheets
 BODY_SIZE = 10.0                  # item text size; smaller text is footer/legal
 NOT_A_TOPIC = {"OBJECTIVES"}
+
+# Topic names are derived from the sheet headings, never hand-maintained, so
+# two rules live here rather than in the JSON:
+#   MINOR         words str.title() would capitalise but shouldn't, so the
+#                 filter reads "Management of Horses and Ponies".
+#   TOPIC_ALIASES headings that differ between sheets but mean the same thing,
+#                 folded onto one name so the topic filter doesn't show
+#                 near-duplicates when "All tests" is selected.
+MINOR = {"a", "an", "and", "at", "for", "in", "of", "on", "or", "the", "to", "with"}
+TOPIC_ALIASES = {
+    # C sheets head this "TRAINING PONIES"; C+ heads it "TRAINING PONIES AND
+    # HORSES". Same subject, so both sit under the C+ (broader) name.
+    "Training Ponies": "Training Ponies and Horses",
+}
 NUMBER = re.compile(r"^(\d+)\.$")
 SUBITEM = re.compile(r"^[a-z]\)")
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "questions.json")
+
+
+def topic_name(heading):
+    """Title-case a sheet heading, then fold it onto its canonical name."""
+    words = heading.title().split(" ")
+    words = [w if i == 0 or w.lower().strip(",") not in MINOR else w.lower()
+             for i, w in enumerate(words)]
+    name = " ".join(words)
+    return TOPIC_ALIASES.get(name, name)
 
 
 def theme_of(path, first_page_text):
@@ -78,7 +100,7 @@ def parse(path):
                 if abs(ln["x0"] - 20.0) < 1 and all(w["fontname"] == BOLD_FONT for w in ln["words"]):
                     head = re.sub(r"\s*\(.*?\)\s*$", "", ln["text"]).strip()
                     if head.upper() == head and head not in NOT_A_TOPIC and not head.endswith(":"):
-                        topic, current = head.title(), None
+                        topic, current = topic_name(head), None
                     else:
                         current = None
                     continue
@@ -105,7 +127,41 @@ def parse(path):
     return cards
 
 
+RETIRED = """
+tools/extract.py is retired and will not run.
+
+WHY
+  1. It cannot read anything but the two C Standard sheets. Run against the C+
+     sheets it returns ZERO cards: it looks for section headings at x0 ~ 20.0 set
+     in CIDFont+F2, and the C+ sheets head their sections at 36.0/41.5 in
+     Arial-BoldMT, so `topic` is never set and no item is ever created. Bold
+     detection, the continuation-indent measurement and the a)/a. sub-item
+     pattern are all C-sheet-specific in the same way.
+  2. It rewrites data/questions.json from only the PDFs it is given, so a run
+     against the C sheets would delete all 67 hand-entered C+ cards.
+  3. Its ids are <theme letter><item number>, which collide across sheets - C+
+     Riding 1 is "r01", and so is C Riding 1.
+  4. It has no concept of one card serving several tests, so a rebuild would
+     recreate the 26 C+ items that were deliberately folded onto existing C
+     cards as duplicates.
+
+At stake if it ran anyway: 11 hand-written answers, 129 hand-set test_level
+values, and the editorial merge decisions behind the C+ import.
+
+INSTEAD
+  Edit data/questions.json by hand, or write a one-off append script for the
+  sheet in front of you (that is how the C+ sheets were added on 13 Sep 2026).
+  Each syllabus arrives in its own format, so a general extractor is not worth
+  building. Background: claude/architecture-decisions.md, "The C+ import".
+
+If you are certain you want the code below, delete this guard deliberately -
+and re-read the four points above first.
+"""
+
+
 def main(paths, level="C"):
+    sys.exit(RETIRED)
+
     existing = {}
     if os.path.exists(OUT):
         with open(OUT, encoding="utf-8") as fh:

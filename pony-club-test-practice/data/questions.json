@@ -1,7 +1,7 @@
 {
   "meta": {
-    "source": "The Pony Club C Standard Test Sheets, Revised 2025",
-    "generated": "2026-08-21"
+    "source": "The Pony Club C Standard Test Sheets (Revised 2025) and C+ Standard Test Sheets (2023, updated 2025)",
+    "generated": "2026-09-13"
   },
   "cards": [
     {
@@ -43,7 +43,7 @@
     {
       "id": "r04",
       "theme": "Riding",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -55,7 +55,7 @@
     {
       "id": "r05",
       "theme": "Riding",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -67,7 +67,7 @@
     {
       "id": "r06",
       "theme": "Riding",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -79,7 +79,7 @@
     {
       "id": "r07",
       "theme": "Riding",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -91,7 +91,7 @@
     {
       "id": "r08",
       "theme": "Riding",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -209,7 +209,7 @@
       ],
       "number": 17,
       "question": "Use legs and hands as aids to increase and decrease pace",
-      "answer": "Riders should use seat, legs and hand aids independently and in coordination. \n Independent means relaxed, open joints that follow the horses movements. \n Coordination means that the aids (hands, legs, seat) are matching the movements of the pony. \n\n At D or D+ test level a rider is expected to: \n * Show basic use of legs aids to go forward \n * Maintain control of a quiet pony around other ponies \n\n At C test level a rider is expected to: \n * ride in balance without relying on the reins, in addition to D test level expectations \n * Direct transitions using leg and hand aids to increase and decrease pace. \n\n At C+ test level a rider is expected to: \n * Apply aids correctly for balanced transitions, including changes of leg at canter through to trot as well as D and C test level expectations \n * Discuss the horse response to aids, rhythm, tempo and suppleness",
+      "answer": "Riders should use seat, legs and hand aids independently and in coordination. \n Independent means relaxed, open joints that follow the horses movements. \n Coordination means that the aids (hands, legs, seat) are matching the movements of the pony. \n\n At D or D+ test level a rider is expected to: \n * Show basic use of legs aids to go forward \n * Maintain control of a quiet pony around other ponies \n\n At C test level a rider is also expected to: \n * ride in balance without relying on the reins \n * Direct transitions using leg and hand aids to increase and decrease pace. \n\n At C+ test level a rider is also expected to: \n * Apply aids correctly for balanced transitions, including changes of leg at canter through to trot \n * Discuss the horse response to aids, rhythm, tempo and suppleness",
       "important": "Yes"
     },
     {
@@ -431,7 +431,7 @@
     {
       "id": "c07",
       "theme": "Care",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -443,7 +443,7 @@
     {
       "id": "c08",
       "theme": "Care",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -455,7 +455,7 @@
     {
       "id": "c09",
       "theme": "Care",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -467,7 +467,7 @@
     {
       "id": "c10",
       "theme": "Care",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -479,7 +479,7 @@
     {
       "id": "c11",
       "theme": "Care",
-      "topic": "Training Ponies",
+      "topic": "Training Ponies and Horses",
       "test_level": [
         "C"
       ],
@@ -750,6 +750,810 @@
       ],
       "number": 33,
       "question": "Give two examples of how water may be wasted on yards",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp01",
+      "theme": "Riding",
+      "topic": "Safety",
+      "test_level": [
+        "C+"
+      ],
+      "number": 1,
+      "question": "Talk about how you would keep yourself safe when riding",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "rp02",
+      "theme": "Riding",
+      "topic": "Safety",
+      "test_level": [
+        "C+"
+      ],
+      "number": 2,
+      "question": "Explain how to keep others, including the ponies/horses, safe when riding in a group",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "rp03",
+      "theme": "Riding",
+      "topic": "Welfare Responsibilities",
+      "test_level": [
+        "C+"
+      ],
+      "number": 3,
+      "question": "Describe what it feels like to ride a pony or horse that is lame",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp04",
+      "theme": "Riding",
+      "topic": "Welfare Responsibilities",
+      "test_level": [
+        "C+"
+      ],
+      "number": 4,
+      "question": "Talk about what it feels like to ride a pony or horse that is tired",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "rp05",
+      "theme": "Riding",
+      "topic": "Welfare Responsibilities",
+      "test_level": [
+        "C+"
+      ],
+      "number": 5,
+      "question": "Describe what it feels like to ride a pony or horse that is stressed",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "rp06",
+      "theme": "Riding",
+      "topic": "Welfare Responsibilities",
+      "test_level": [
+        "C+"
+      ],
+      "number": 6,
+      "question": "List the dangers of over-working a pony or horse that is overweight or unfit",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp07",
+      "theme": "Riding",
+      "topic": "Welfare Responsibilities",
+      "test_level": [
+        "C+"
+      ],
+      "number": 7,
+      "question": "Understand the welfare issues surrounding the use of spurs",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "rp08",
+      "theme": "Riding",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 8,
+      "question": "List the first three points in the Scale of Training",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "rp10",
+      "theme": "Riding",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 10,
+      "question": "Discuss how you would recognise a correct response from your pony/horse to the aids",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp12",
+      "theme": "Riding",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 12,
+      "question": "Discuss the advantages and disadvantages of using positive reinforcement in training",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp13",
+      "theme": "Riding",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 13,
+      "question": "Give an example of a behavioural problem and how you might correct it",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp14",
+      "theme": "Riding",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 14,
+      "question": "Cover the outline of The Spurs Test",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "rp15",
+      "theme": "Riding",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 15,
+      "question": "Explain the importance of timing when correcting a pony’s/horse’s mistake",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp16",
+      "theme": "Riding",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 16,
+      "question": "Explain the importance of monitoring a pony’s/horse’s level of stress or excitement when training",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp17",
+      "theme": "Riding",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 17,
+      "question": "Explain to the importance of progressive/easy achieve steps when training ponies/horses",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp18",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 18,
+      "question": "Discuss the advantages to your pony/horse of maintaining a correct riding position",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "rp21",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 21,
+      "question": "Ride a variety of turns and circles demonstrating rider straightness and balance of the pony/horse that is suitable for its stage of training",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp23",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 23,
+      "question": "Show ‘turn on the forehand’, from halt, in both directions",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp24",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 24,
+      "question": "Know the aids for, and show, leg yielding at walk",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp25",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 25,
+      "question": "Ride with reins in one hand",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp26",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 26,
+      "question": "Describe the response to the aids of the pony or horse that you are riding",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp27",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 27,
+      "question": "Describe the extent to which the pony/horse that you are riding is working forwards in a suitable rhythm and tempo, relaxed and calm",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp28",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 28,
+      "question": "Comment on the suppleness of the pony/horse that you are riding",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp29",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 29,
+      "question": "Understand the reasons for the tack and equipment the pony/horse you are riding is wearing",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp30",
+      "theme": "Riding",
+      "topic": "Flat Work",
+      "test_level": [
+        "C+"
+      ],
+      "number": 30,
+      "question": "If spurs are worn, explain the reasons why, in detail and with understanding",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "rp33",
+      "theme": "Riding",
+      "topic": "Jumping",
+      "test_level": [
+        "C+"
+      ],
+      "number": 33,
+      "question": "Jump a variety of show jumping and cross-country fences, including combination fences (maximum height, 80 cm)",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp34",
+      "theme": "Riding",
+      "topic": "Jumping",
+      "test_level": [
+        "C+"
+      ],
+      "number": 34,
+      "question": "Jump up and down slopes",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp35",
+      "theme": "Riding",
+      "topic": "Jumping",
+      "test_level": [
+        "C+"
+      ],
+      "number": 35,
+      "question": "Identify which of the fences you jumped was the best and explain why",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp37",
+      "theme": "Riding",
+      "topic": "Jumping",
+      "test_level": [
+        "C+"
+      ],
+      "number": 37,
+      "question": "Understand and discuss distances for a two-stride double for the pony/horse you are riding",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp38",
+      "theme": "Riding",
+      "topic": "Jumping",
+      "test_level": [
+        "C+"
+      ],
+      "number": 38,
+      "question": "Explain what is meant by the term ‘related distances between fences’",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "rp39",
+      "theme": "Riding",
+      "topic": "Jumping",
+      "test_level": [
+        "C+"
+      ],
+      "number": 39,
+      "question": "Show and/or discuss the immediate care of your pony/horse on finishing the cross country",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp01",
+      "theme": "Care",
+      "topic": "Safety",
+      "test_level": [
+        "C+"
+      ],
+      "number": 1,
+      "question": "Explain how you would keep yourself safe when working alone with ponies/horses",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp02",
+      "theme": "Care",
+      "topic": "Safety",
+      "test_level": [
+        "C+"
+      ],
+      "number": 2,
+      "question": "Outline your responsibilities towards others to keep them safe when you are working on the same yard",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "cp03",
+      "theme": "Care",
+      "topic": "Safety",
+      "test_level": [
+        "C+"
+      ],
+      "number": 3,
+      "question": "Explain how you should behave to keep ponies/horses safe in stables and on the yard",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp04",
+      "theme": "Care",
+      "topic": "Safety",
+      "test_level": [
+        "C+"
+      ],
+      "number": 4,
+      "question": "List features of safe and unsafe yard environments",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp06",
+      "theme": "Care",
+      "topic": "Welfare Responsibilities",
+      "test_level": [
+        "C+"
+      ],
+      "number": 6,
+      "question": "Explain how you could minimise the amount of time that a stabled pony or horse is without food overnight (whilst ensuring that it did not become overweight)",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp07",
+      "theme": "Care",
+      "topic": "Welfare Responsibilities",
+      "test_level": [
+        "C+"
+      ],
+      "number": 7,
+      "question": "Talk about things you can do to make time in the stable more enjoyable for ponies and horses",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp10",
+      "theme": "Care",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 10,
+      "question": "Discuss the equine flight response; give an example of an event that might induce the flight response and suggest how this could be avoided in a yard environment",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "cp15",
+      "theme": "Care",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 15,
+      "question": "Explain the importance of timing and consistency when correcting a pony’s/horse’s mistake",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp16",
+      "theme": "Care",
+      "topic": "Training Ponies and Horses",
+      "test_level": [
+        "C+"
+      ],
+      "number": 16,
+      "question": "Explain the importance of monitoring stress when correcting a pony’s mistakes/training",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp18",
+      "theme": "Care",
+      "topic": "Management of Horses and Ponies",
+      "test_level": [
+        "C+"
+      ],
+      "number": 18,
+      "question": "Discuss the care and exercise of a horse or pony that’s fully or partially stabled",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp19",
+      "theme": "Care",
+      "topic": "Management of Horses and Ponies",
+      "test_level": [
+        "C+"
+      ],
+      "number": 19,
+      "question": "Talk about keeping the stable environment clean and tidy",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp20",
+      "theme": "Care",
+      "topic": "Feeding",
+      "test_level": [
+        "C+"
+      ],
+      "number": 20,
+      "question": "Discuss ponies’/horses’ need for fresh water",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "cp21",
+      "theme": "Care",
+      "topic": "Feeding",
+      "test_level": [
+        "C+"
+      ],
+      "number": 21,
+      "question": "Discuss the importance of forage in the diet",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "cp22",
+      "theme": "Care",
+      "topic": "Feeding",
+      "test_level": [
+        "C+"
+      ],
+      "number": 22,
+      "question": "Know the differences between hay, haylage, and other forages",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp23",
+      "theme": "Care",
+      "topic": "Feeding",
+      "test_level": [
+        "C+"
+      ],
+      "number": 23,
+      "question": "Discuss different methods of providing hay to horses/ponies",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp24",
+      "theme": "Care",
+      "topic": "Feeding",
+      "test_level": [
+        "C+"
+      ],
+      "number": 24,
+      "question": "Explain how you would select a feed for a pony/horse",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp25",
+      "theme": "Care",
+      "topic": "Feeding",
+      "test_level": [
+        "C+"
+      ],
+      "number": 25,
+      "question": "Explain how you would prepare different feeds (e.g. sugar beet)",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp26",
+      "theme": "Care",
+      "topic": "Feeding",
+      "test_level": [
+        "C+"
+      ],
+      "number": 26,
+      "question": "Discuss how feeding would differ between a stabled pony/horse and one kept at grass",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp28",
+      "theme": "Care",
+      "topic": "Grooming, Bandaging, and Travel",
+      "test_level": [
+        "C+"
+      ],
+      "number": 28,
+      "question": "Discuss the advantages and disadvantages of washing horses and ponies, and know how to do this correctly",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp29",
+      "theme": "Care",
+      "topic": "Grooming, Bandaging, and Travel",
+      "test_level": [
+        "C+"
+      ],
+      "number": 29,
+      "question": "Discuss when trimming might be required, which parts of the pony/horse you would trim and which parts you would not trim.",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp30",
+      "theme": "Care",
+      "topic": "Grooming, Bandaging, and Travel",
+      "test_level": [
+        "C+"
+      ],
+      "number": 30,
+      "question": "Put on a stable bandage",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp34",
+      "theme": "Care",
+      "topic": "Foot and Shoeing",
+      "test_level": [
+        "C+"
+      ],
+      "number": 34,
+      "question": "Explain the reasons for trimming and shoeing ponies’/horse’s feet",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "cp35",
+      "theme": "Care",
+      "topic": "Foot and Shoeing",
+      "test_level": [
+        "C+"
+      ],
+      "number": 35,
+      "question": "Describe a general purpose shoe",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp36",
+      "theme": "Care",
+      "topic": "Foot and Shoeing",
+      "test_level": [
+        "C+"
+      ],
+      "number": 36,
+      "question": "Describe a well cared for foot (shod or unshod)",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp38",
+      "theme": "Care",
+      "topic": "Foot and Shoeing",
+      "test_level": [
+        "C+"
+      ],
+      "number": 38,
+      "question": "Know the names and uses of the farrier’s tools",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp39",
+      "theme": "Care",
+      "topic": "Foot and Shoeing",
+      "test_level": [
+        "C+"
+      ],
+      "number": 39,
+      "question": "Name the external and internal parts of the foot",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp41",
+      "theme": "Care",
+      "topic": "Tack",
+      "test_level": [
+        "C+"
+      ],
+      "number": 41,
+      "question": "Recognise a variety of bits that are allowed in Pony Club activities",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp42",
+      "theme": "Care",
+      "topic": "Tack",
+      "test_level": [
+        "C+"
+      ],
+      "number": 42,
+      "question": "Explain the action(s) of the bit you normally ride in",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp44",
+      "theme": "Care",
+      "topic": "Health and First Aid",
+      "test_level": [
+        "C+"
+      ],
+      "number": 44,
+      "question": "Know horses and ponies’ normal resting respiration rate and show how to take it",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp46",
+      "theme": "Care",
+      "topic": "Health and First Aid",
+      "test_level": [
+        "C+"
+      ],
+      "number": 46,
+      "question": "Know what might cause colic",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp47",
+      "theme": "Care",
+      "topic": "Health and First Aid",
+      "test_level": [
+        "C+"
+      ],
+      "number": 47,
+      "question": "Estimate the body condition (fat) score of a named horse, using the 0–5 scale for fat scoring",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp48",
+      "theme": "Care",
+      "topic": "Health and First Aid",
+      "test_level": [
+        "C+"
+      ],
+      "number": 48,
+      "question": "State whether the body condition (fat) score is healthy or unhealthy",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp50",
+      "theme": "Care",
+      "topic": "Health and First Aid",
+      "test_level": [
+        "C+"
+      ],
+      "number": 50,
+      "question": "Know how to care for a wound until the vet arrives",
+      "answer": "",
+      "important": "Yes"
+    },
+    {
+      "id": "cp51",
+      "theme": "Care",
+      "topic": "Health and First Aid",
+      "test_level": [
+        "C+"
+      ],
+      "number": 51,
+      "question": "Know how to cool the legs of a horse or pony after hard work",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp52",
+      "theme": "Care",
+      "topic": "Environment",
+      "test_level": [
+        "C+"
+      ],
+      "number": 52,
+      "question": "Explain four ways in which horse owners and carers can reduce their carbon hoofprints and footprints",
+      "answer": "",
+      "important": "No"
+    },
+    {
+      "id": "cp54",
+      "theme": "Care",
+      "topic": "Environment",
+      "test_level": [
+        "C+"
+      ],
+      "number": 54,
+      "question": "Understand how to manage horse-related waste responsibly",
       "answer": "",
       "important": "No"
     }
