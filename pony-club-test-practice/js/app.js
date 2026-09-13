@@ -9,6 +9,8 @@
   var EMPTY_ANSWER = 'No answer recorded yet — say it out loud in your own words, then check against your Manual of Horsemanship.';
 
   var el = {
+    testField: document.getElementById('testField'),
+    test: document.getElementById('test'),
     theme: document.getElementById('theme'),
     topic: document.getElementById('topic'),
     important: document.getElementById('importantOnly'),
@@ -19,6 +21,7 @@
     card: document.getElementById('card'),
     frontTheme: document.getElementById('frontTheme'),
     frontTopic: document.getElementById('frontTopic'),
+    frontTests: document.getElementById('frontTests'),
     frontImportant: document.getElementById('frontImportant'),
     frontText: document.getElementById('frontText'),
     backRef: document.getElementById('backRef'),
@@ -38,6 +41,7 @@
   function start(data) {
     allCards = (data && data.cards) || [];
     if (!allCards.length) throw new Error('no cards in file');
+    populateTests();
     populateThemes();
     populateTopics();
     buildDeck();
@@ -77,6 +81,40 @@
     return out;
   }
 
+  // Standard Pony Club progression; anything unrecognised sorts to the end.
+  var TEST_ORDER = ['D', 'D+', 'C', 'C+', 'B', 'A'];
+
+  function testsOf(card) {
+    var t = card.test_level;
+    if (!t) return [];
+    return (Object.prototype.toString.call(t) === '[object Array]' ? t : [t])
+      .filter(function (v) { return !!v; });
+  }
+
+  function byTestOrder(a, b) {
+    var ia = TEST_ORDER.indexOf(a), ib = TEST_ORDER.indexOf(b);
+    if (ia === -1 && ib === -1) return a < b ? -1 : a > b ? 1 : 0;
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
+  }
+
+  function matchesTest(card) {
+    return !el.test.value || testsOf(card).indexOf(el.test.value) > -1;
+  }
+
+  function populateTests() {
+    var levels = [];
+    allCards.forEach(function (c) {
+      testsOf(c).forEach(function (l) { if (levels.indexOf(l) === -1) levels.push(l); });
+    });
+    levels.sort(byTestOrder).forEach(function (l) {
+      el.test.appendChild(new Option(l + ' test', l));
+    });
+    // One test in the file is not a choice — same rule as the voice control.
+    el.testField.hidden = levels.length < 2;
+  }
+
   function populateThemes() {
     unique(allCards.map(function (c) { return c.theme; })).forEach(function (t) {
       el.theme.appendChild(new Option(t, t));
@@ -87,7 +125,7 @@
     var wanted = el.theme.value;
     var current = el.topic.value;
     var topics = unique(allCards
-      .filter(function (c) { return !wanted || c.theme === wanted; })
+      .filter(function (c) { return (!wanted || c.theme === wanted) && matchesTest(c); })
       .map(function (c) { return c.topic; }));
 
     el.topic.length = 1;
@@ -97,6 +135,7 @@
 
   function filtered() {
     return allCards.filter(function (c) {
+      if (!matchesTest(c)) return false;
       if (el.theme.value && c.theme !== el.theme.value) return false;
       if (el.topic.value && c.topic !== el.topic.value) return false;
       if (el.important.checked && c.important !== 'Yes') return false;
@@ -120,10 +159,11 @@
   }
 
   function isDefaultFilters() {
-    return !el.theme.value && !el.topic.value && !el.important.checked;
+    return !el.test.value && !el.theme.value && !el.topic.value && !el.important.checked;
   }
 
   function resetFilters() {
+    el.test.value = '';
     el.theme.value = '';
     el.important.checked = false;
     populateTopics();          // rebuilds the topic list, then clears it
@@ -190,7 +230,7 @@
     document.body.classList.toggle('empty', total === 0);
 
     if (!total) {
-      el.status.textContent = 'No questions match those options — try widening the theme, topic or importance filter.';
+      el.status.textContent = 'No questions match those options — try widening the test, theme, topic or importance filter.';
       el.counter.textContent = '0 / 0';
       el.prev.disabled = el.next.disabled = true;
       return;
@@ -202,6 +242,18 @@
     el.frontTheme.textContent = card.theme;
     el.frontTopic.textContent = card.topic;
     el.frontTopic.hidden = card.topic === card.theme;   // "Riding / Riding" reads as a mistake
+
+    var tests = testsOf(card).sort(byTestOrder);
+    el.frontTests.textContent = tests.join(' · ');
+    el.frontTests.hidden = !tests.length;
+    if (tests.length) {
+      // The dot separator is decoration; read it out as words instead.
+      var spoken = tests.length > 1
+        ? tests.slice(0, -1).join(', ') + ' and ' + tests[tests.length - 1] + ' tests'
+        : tests[0] + ' test';
+      el.frontTests.setAttribute('aria-label', 'Applies to the ' + spoken);
+    }
+
     el.frontImportant.hidden = card.important !== 'Yes';
     el.frontText.textContent = card.question;
 
@@ -396,6 +448,7 @@
     el.shuffle.addEventListener('click', buildDeck);
     el.reset.addEventListener('click', resetFilters);
 
+    el.test.addEventListener('change', function () { populateTopics(); buildDeck(); });
     el.theme.addEventListener('change', function () { populateTopics(); buildDeck(); });
     el.topic.addEventListener('change', buildDeck);
     el.important.addEventListener('change', buildDeck);

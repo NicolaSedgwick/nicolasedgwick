@@ -3,10 +3,13 @@
 
     pip install pdfplumber
     python3 tools/extract.py CTestRidingRevised2025.pdf CTestCareRevised2025.pdf
+    python3 tools/extract.py --level D+ DPlusTestRevised2025.pdf
 
 Detects the section headings, the numbered items (including wrapped lines and
-a)/b)/c) sub-parts) and which items are set in bold. Answers already present in
-data/questions.json are carried over, matched on `id`.
+a)/b)/c) sub-parts) and which items are set in bold. Answers AND test_level
+already present in data/questions.json are carried over, matched on `id` —
+test_level is maintained by hand, so a rebuild must never flatten it. New cards
+get --level (default "C").
 """
 
 import json
@@ -102,25 +105,26 @@ def parse(path):
     return cards
 
 
-def main(paths):
+def main(paths, level="C"):
     existing = {}
     if os.path.exists(OUT):
         with open(OUT, encoding="utf-8") as fh:
             for card in json.load(fh).get("cards", []):
-                if card.get("answer"):
-                    existing[card["id"]] = card["answer"]
+                existing[card["id"]] = card
 
     cards = []
     for path in paths:
         for card in parse(path):
             question = unicodedata.normalize("NFC", card["question"])
+            was = existing.get(card["id"], {})
             cards.append({
                 "id": card["id"],
                 "theme": card["theme"],
                 "topic": card["topic"],
+                "test_level": was.get("test_level") or [level],
                 "number": card["number"],
                 "question": re.sub(r"\s+([;,])", r"\1", question).strip(),
-                "answer": existing.get(card["id"], ""),
+                "answer": was.get("answer", ""),
                 "important": "Yes" if card.pop("_bold") else "No",
             })
 
@@ -140,11 +144,21 @@ def main(paths):
         fh.write("\n")
 
     kept = sum(1 for c in cards if c["answer"])
-    print("Wrote %d cards (%d important, %d answers preserved) to %s"
-          % (len(cards), sum(c["important"] == "Yes" for c in cards), kept, os.path.normpath(OUT)))
+    levels = sum(1 for c in cards if existing.get(c["id"], {}).get("test_level"))
+    print("Wrote %d cards (%d important, %d answers and %d test levels preserved) to %s"
+          % (len(cards), sum(c["important"] == "Yes" for c in cards), kept, levels,
+             os.path.normpath(OUT)))
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
+    args = sys.argv[1:]
+    new_level = "C"
+    while "--level" in args:
+        i = args.index("--level")
+        if i + 1 >= len(args):
+            sys.exit("--level needs a value, e.g. --level D+")
+        new_level = args[i + 1]
+        del args[i:i + 2]
+    if not args:
         sys.exit(__doc__)
-    main(sys.argv[1:])
+    main(args, new_level)

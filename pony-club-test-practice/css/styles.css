@@ -113,6 +113,7 @@ body {
 }
 .field { flex: 1 1 8.5rem; min-width: 0; }
 .field--wide { flex: 1.6 1 10rem; }
+.field--narrow { flex: .7 1 6.5rem; }
 .field label,
 .field__label {
   display: block;
@@ -263,6 +264,11 @@ select:focus-visible,
 }
 .card__face--back .tag--muted { color: rgba(238, 244, 236, .82); border-color: rgba(238, 244, 236, .28); }
 .tag--important { background: var(--accent-bg); color: var(--accent); }
+.tag--test {
+  background: var(--bg);
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+}
 
 .card__text {
   margin: 0;

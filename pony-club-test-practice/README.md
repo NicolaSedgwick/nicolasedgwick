@@ -2,7 +2,7 @@
 
 A flashcard app for practising The Pony Club **C Standard Test** (Riding, and Horse & Pony Care), Revised 2025.
 
-Tap a card to flip it, tap the loudspeaker to hear it read aloud. Filter by theme, topic, or just the **important** (bold) items, work through a shuffled deck, and choose a male or female reading voice. **Reset** puts the filters back the way they were on load; it greys itself out when there is nothing to reset.
+Tap a card to flip it, tap the loudspeaker to hear it read aloud. Filter by test, theme, topic, or just the **important** (bold) items, work through a shuffled deck, and choose a male or female reading voice. **Reset** puts the filters back the way they were on load; it greys itself out when there is nothing to reset.
 
 No accounts, no cookies, no analytics, no server, nothing sent anywhere. Everything runs in the browser. Feedback comes in by email — the address is in the page footer.
 
@@ -15,6 +15,7 @@ js/app.js             deck logic, filters, read-aloud
 data/questions.json   the question bank  ← this is the file you edit
 tools/extract.py      regenerates questions.json from the official PDFs (optional)
 tools/bundle.py       squashes the whole app into one shareable .html file (optional)
+tools/tests/          browser tests, optional — see tools/tests/README.md
 tools/parked/         groundwork for features not currently switched on
 
 pony-club-c-test-standalone.html   the squashed single-file build
@@ -31,6 +32,7 @@ Only the first four are needed for the site to run. `tools/` is there so the app
   "id": "r17",
   "theme": "Riding",
   "topic": "Riding",
+  "test_level": ["D", "D+", "C", "C+"],
   "number": 17,
   "question": "Use legs and hands as aids to increase and decrease pace",
   "answer": "",
@@ -43,6 +45,7 @@ Only the first four are needed for the site to run. `tools/` is there so the app
 | `id` | Short unique key (`r` or `c` plus the item number). Not shown to the user. |
 | `theme` | `"Riding"` or `"Care"` — from the document title. |
 | `topic` | The heading the item sits under, e.g. `"Safety"`, `"Pony Care"`. |
+| `test_level` | Which tests the item appears in, e.g. `["C"]` or `["D+", "C"]`. Yours to maintain — see below. |
 | `number` | The item number on the official test sheet. |
 | `question` | The bullet text, verbatim. |
 | `answer` | **Blank for now.** Fill these in as you go. |
@@ -63,6 +66,38 @@ Three rules that keep the file valid:
 3. Every `,` and `}` that is already there must stay exactly where it is.
 
 You can edit the file straight on GitHub (open it and click the pencil). GitHub will underline the line in red if the JSON is broken, so you'll know before you commit. If you'd rather check first, paste the whole file into <https://jsonlint.com>.
+
+### Linking to a video or a page
+
+Write the link inside the answer like this — square brackets round the words you
+want people to see, round brackets round the address:
+
+```json
+"answer": "[YouTube video](https://www.youtube.com/watch?v=IN88Jp5tRKA) for B test training from Sasha Hargreaves"
+```
+
+It appears as an underlined link that opens in a new tab, and tapping it follows
+the link rather than turning the card over. Read-aloud says the words, not the
+address.
+
+Please don't paste HTML (`<a href=...>`) into an answer — it shows up as visible
+tags. The bracket form above is the way in, and it keeps a stray `<` in an
+answer harmless.
+
+### Which tests a question belongs to
+
+`test_level` is a list, because plenty of items appear in more than one test:
+
+```json
+"test_level": ["D+", "C"],
+```
+
+It does two jobs: it fills the **Test** dropdown at the top of the page, and it
+shows as a small label on the question side of the card (`C`, or `D · D+ · C ·
+C+`). Use the same short names the test sheets use — `D`, `D+`, `C`, `C+`, `B`.
+Anything the app doesn't recognise still works, it just sorts to the end of the
+dropdown. A card with an empty list simply shows no label and appears only under
+"All tests".
 
 ## Publishing on GitHub Pages
 
@@ -116,12 +151,28 @@ The choice lasts for the visit only — there is no storage, so it starts from t
 
 ## Regenerating the data from the PDFs
 
-If The Pony Club revises the test sheets, drop the new PDFs beside `tools/extract.py` and run it — it re-detects the headings, the item numbering and the bold items, and writes a fresh `questions.json`. It preserves any answers you have already written, matching on `id`.
+If The Pony Club revises the test sheets, drop the new PDFs beside `tools/extract.py` and run it — it re-detects the headings, the item numbering and the bold items, and writes a fresh `questions.json`. It preserves the work you have done by hand — both `answer` and `test_level` — matching on `id`.
 
 ```bash
 pip install pdfplumber
 python3 tools/extract.py CTestRidingRevised2025.pdf CTestCareRevised2025.pdf
 ```
+
+It prints how many answers and test levels it carried over, so if that number
+drops you'll see it straight away. Keep a copy of `data/questions.json` before a
+rebuild all the same.
+
+Adding a different test's sheets? `--level` sets what brand-new cards get; cards
+that already exist keep the levels you gave them.
+
+```bash
+python3 tools/extract.py --level D+ DPlusTestRevised2025.pdf
+```
+
+One rule worth remembering: if you ever start maintaining another field by hand
+in `questions.json`, add it to the carry-over list in `extract.py` at the same
+time. The extractor is the one thing that can undo hours of editing in a single
+command.
 
 ## The single-file build
 

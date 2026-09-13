@@ -22,6 +22,12 @@
 <main class="wrap">
 
   <section class="controls" aria-label="Deck options">
+    <div class="field field--narrow" id="testField" hidden>
+      <label for="test">Test</label>
+      <select id="test">
+        <option value="">All tests</option>
+      </select>
+    </div>
     <div class="field">
       <label for="theme">Theme</label>
       <select id="theme">
@@ -78,6 +84,7 @@
           <div class="card__meta">
             <span class="tag" id="frontTheme"></span>
             <span class="tag tag--muted" id="frontTopic"></span>
+            <span class="tag tag--test" id="frontTests" hidden></span>
             <span class="tag tag--important" id="frontImportant" hidden>★ Important</span>
           </div>
           <p class="card__text" id="frontText"></p>
