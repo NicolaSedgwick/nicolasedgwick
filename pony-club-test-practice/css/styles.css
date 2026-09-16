@@ -290,7 +290,24 @@ select:focus-visible,
   white-space: pre-line;
 }
 .card__text--answer { font-size: 1.15rem; }
-.card__text .rich { display: block; width: 100%; }
+.card__text .rich,
+.card__prompt .rich { display: block; width: 100%; }
+
+/* Pictures from ![alt](images/file.jpg) — always on a line of their own,
+   never wider than the card, and short enough that the card doesn't jump. */
+.card__image {
+  display: block;
+  max-width: 100%;
+  max-height: 13rem;
+  width: auto;
+  height: auto;
+  margin: .6rem 0 .2rem;
+  border-radius: 8px;
+  background: #fff;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.card__prompt .card__image { max-height: 4.5rem; margin: .35rem 0 0; border-radius: 5px; }
 .card__text a {
   color: inherit;
   text-decoration: underline;

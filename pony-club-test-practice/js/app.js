@@ -173,10 +173,22 @@
 
   /* ---------- rendering ---------- */
 
-  // Answers are plain text, not HTML — a [label](https://url) in questions.json
-  // becomes a real link. Nothing is ever inserted as markup, so a stray angle
-  // bracket in an answer stays a stray angle bracket.
+  // Questions and answers are plain text, not HTML. Two bits of syntax in
+  // questions.json become real elements:
+  //   [label](https://url)            -> a link
+  //   ![alt](images/file.jpg)         -> a picture (or an https:// address)
+  // Nothing is ever inserted as markup, so a stray angle bracket stays a stray
+  // angle bracket. Images are matched first so their brackets aren't read as a
+  // link. data:image/... is allowed only because the single-file build swaps
+  // images/ paths for inlined copies.
   var LINK_RE = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+  var IMAGE_RE = /!\[([^\]]*)\]\(((?:images\/|https:\/\/|data:image\/(?:jpeg|png|gif|webp);base64,)[^\s)]+)\)/g;
+  var RICH_RE = new RegExp(IMAGE_RE.source + '|' + LINK_RE.source, 'g');
+
+  function fileNameOf(src) {
+    if (/^data:/.test(src)) return 'image';
+    return decodeURIComponent(src.split(/[?#]/)[0].split('/').pop() || 'image');
+  }
 
   function renderRich(text, target) {
     target.textContent = '';
@@ -184,24 +196,54 @@
     // child; loose text nodes would each become their own flex item.
     var wrap = document.createElement('span');
     wrap.className = 'rich';
-    var last = 0, m;
-    LINK_RE.lastIndex = 0;
-    while ((m = LINK_RE.exec(text)) !== null) {
-      if (m.index > last) wrap.appendChild(document.createTextNode(text.slice(last, m.index)));
-      var a = document.createElement('a');
-      a.href = m[2];
-      a.textContent = m[1];
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      wrap.appendChild(a);
+    var last = 0, m, afterImage = false;
+    text = String(text);
+    RICH_RE.lastIndex = 0;
+
+    function addText(t) {
+      // A picture sits on its own line, so the line break and spaces written
+      // around it in the JSON would only add an empty line.
+      if (afterImage) t = t.replace(/^\s+/, '');
+      if (t) wrap.appendChild(document.createTextNode(t));
+    }
+
+    while ((m = RICH_RE.exec(text)) !== null) {
+      var before = text.slice(last, m.index);
+      if (m[2]) {                                   // ![alt](src)
+        addText(before.replace(/\s+$/, ''));
+        var img = document.createElement('img');
+        img.className = 'card__image';
+        img.src = m[2];
+        img.alt = m[1] || fileNameOf(m[2]);
+        img.decoding = 'async';
+        img.draggable = false;
+        wrap.appendChild(img);
+        afterImage = true;
+      } else {                                      // [label](https://url)
+        addText(before);
+        var a = document.createElement('a');
+        a.href = m[4];
+        a.textContent = m[3];
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        wrap.appendChild(a);
+        afterImage = false;
+      }
       last = m.index + m[0].length;
     }
-    if (last < text.length) wrap.appendChild(document.createTextNode(text.slice(last)));
+    addText(text.slice(last));
     target.appendChild(wrap);
   }
 
-  function plainText(text) {            // for read-aloud: say the label, not the URL
-    return String(text).replace(LINK_RE, '$1');
+  // For read-aloud: say a link's label, not its URL, and skip pictures
+  // entirely — reading the file name out would give the answer away.
+  function plainText(text) {
+    return String(text)
+      .replace(IMAGE_RE, ' ')
+      .replace(LINK_RE, '$1')
+      .replace(/[ \t]*\n[ \t]*/g, '\n')
+      .replace(/[ \t]{2,}/g, ' ')
+      .trim();
   }
 
   function setFlipped(on) {
@@ -255,10 +297,10 @@
     }
 
     el.frontImportant.hidden = card.important !== 'Yes';
-    el.frontText.textContent = card.question;
+    renderRich(card.question, el.frontText);
 
     el.backRef.textContent = card.theme + ' ' + card.number;
-    el.backPrompt.textContent = card.question;
+    renderRich(card.question, el.backPrompt);
 
     var hasAnswer = card.answer && card.answer.trim();
     renderRich(hasAnswer ? card.answer.trim() : EMPTY_ANSWER, el.backText);
@@ -377,7 +419,7 @@
 
   function speakSample() {
     var card = deck[index];
-    if (card) speak(card.question.split(/[;:\n]/)[0], null);
+    if (card) speak(plainText(card.question).split(/[;:\n]/)[0], null);
   }
 
   function stopSpeaking() {
@@ -415,9 +457,10 @@
   function visibleText() {
     var card = deck[index];
     if (!card) return '';
-    if (!el.card.classList.contains('is-flipped')) return card.question;
+    var question = plainText(card.question);
+    if (!el.card.classList.contains('is-flipped')) return question;
     var answer = card.answer && card.answer.trim();
-    return card.question + '. ' + (answer ? plainText(answer) : 'No answer has been recorded for this question yet.');
+    return question + '. ' + (answer ? plainText(answer) : 'No answer has been recorded for this question yet.');
   }
 
   /* ---------- events ---------- */

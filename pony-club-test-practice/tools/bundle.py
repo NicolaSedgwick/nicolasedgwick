@@ -22,6 +22,30 @@ css = read("css", "styles.css")
 app = read("js", "app.js")
 data = json.loads(read("data", "questions.json"))
 
+# Pictures: a single file can't reach the images/ folder, so every
+# ![alt](images/...) in a question or answer is swapped for an inlined copy.
+import base64
+import mimetypes
+
+IMAGE_PATH = re.compile(r"(!\[[^\]]*\]\()(images/[^\s)]+)(\))")
+
+
+def inline_image(m):
+    path = os.path.join(root, *m.group(2).split("/"))
+    if not os.path.isfile(path):
+        print("WARNING: missing image %s" % m.group(2), file=sys.stderr)
+        return m.group(0)
+    mime = mimetypes.guess_type(path)[0] or "image/jpeg"
+    with open(path, "rb") as fh:
+        b64 = base64.b64encode(fh.read()).decode("ascii")
+    return m.group(1) + "data:%s;base64,%s" % (mime, b64) + m.group(3)
+
+
+for card in data.get("cards", []):
+    for field in ("question", "answer"):
+        if isinstance(card.get(field), str):
+            card[field] = IMAGE_PATH.sub(inline_image, card[field])
+
 payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 inline = (
     "<script>window.PC_DATA=%s;</script>\n"
