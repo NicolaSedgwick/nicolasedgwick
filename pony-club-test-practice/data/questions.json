@@ -560,7 +560,7 @@
 	"C+"
       ],
       "number": 16,
-      "question": "Show when to use positive rewards (food, scratching) when training a pony\’s stable manners",
+      "question": "Show when to use positive rewards (food, scratching) when training a pony for stable manners",
       "answer": "",
       "important": "No"
     },
