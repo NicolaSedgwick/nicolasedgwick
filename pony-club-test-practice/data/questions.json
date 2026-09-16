@@ -13,7 +13,7 @@
       ],
       "number": 1,
       "question": "List what you should be wearing when riding in the countryside or leading a pony on the road; explain why each item on your list is important",
-      "answer": "",
+      "answer": "* A current-standard, correctly fitted riding hat protects your head. \n * Secure boots with a defined heel protect your feet \n * gloves improve grip and protect your hands. \n * Wear bright or reflective clothing so other road users can see you \n * suitable outerwear keeps you safe for the weather.",
       "important": "No"
     },
     {
@@ -25,7 +25,7 @@
       ],
       "number": 2,
       "question": "Show how to work safely with a pony when dismounted",
-      "answer": "",
+      "answer": "Approach calmly where the pony can see or hear you and speak before touching. \n * Wear suitable footwear, use a correctly fitted headcollar and lead rope, and never wrap the rope around your hand. \n * Wear suitable footwear, use a correctly fitted headcollar and lead rope, and never wrap the rope around your hand.",
       "important": "No"
     },
     {
@@ -420,11 +420,11 @@
       ],
       "number": 5,
       "question": "List and explain the importance of the Five Domains of pony welfare",
-      "answer": "",
+      "answer": "Nutrition: suitable food and water. \n * Physical environment: comfortable, safe surroundings. \n * Health: protection from pain, injury and disease. \n * Behavioural interactions: movement, choice and suitable contact with horses, people and the environment. \n * Mental state: the positive and negative experiences produced by the other four domains.",
       "important": "No"
     },
     {
-      "id": "c06",
+      "id": "c06a",
       "theme": "Care",
       "topic": "Understanding What Your Pony Needs",
       "test_level": [
@@ -432,8 +432,60 @@
 	"C+"
       ],
       "number": 6,
-      "question": "Give two examples of the physical/mental effects on ponies of:\na) Poor feeding and watering\nb) Good paddocks and stables\nc) Poor health (including the effects of injuries and pain)\nd) Being unable to behave in a natural way\ne) Being scared (e.g., of people or other animals)",
-      "answer": "",
+      "question": "Give two examples of the physical/mental effects on ponies of:\na) Poor feeding and watering",
+      "answer": "a) Poor feeding and watering can: \n Cause hunger, thirst, weakness, weight loss or poor condition. \n Increase the risk of colic, gastric irritation, laminitis or other illness. \n Create stress, frustration, poor concentration or unwanted behaviour.",
+      "important": "No"
+    },
+    {
+      "id": "c06b",
+      "theme": "Care",
+      "topic": "Understanding What Your Pony Needs",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 6,
+      "question": "Give two examples of the physical/mental effects on ponies of:\n b) Good paddocks and stables",
+      "answer": "b) Good Paddocks: \n provide safe footing, shelter, ventilation, clean water and freedom from avoidable hazards. \n support rest, movement, grazing and appropriate contact with other horses. \n are a comfortable environment helps the pony feel secure and reduces injury and illness risk.",
+      "important": "No"
+    },
+    {
+      "id": "c06c",
+      "theme": "Care",
+      "topic": "Understanding What Your Pony Needs",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 6,
+      "question": "Give two examples of the physical/mental effects on ponies of: \nc) Poor health (including the effects of injuries and pain)",
+      "answer": "c) Poor health: \n The pony may move unevenly, rest a limb, become reluctant or change posture. \n It may eat less, lose condition, seem dull or become unusually defensive. \n Ongoing pain causes fear or distress and must be investigated promptly",
+      "important": "No"
+    },
+    {
+      "id": "c06d",
+      "theme": "Care",
+      "topic": "Understanding What Your Pony Needs",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 6,
+      "question": "Give two examples of the physical/mental effects on ponies of:\nd) Being unable to behave in a natural way",
+      "answer": "d) Unable to behave in a natural way can cause: \n Lack of movement, forage, choice or social contact can cause boredom, frustration and stress. \n The pony may call, barge, become withdrawn or develop stereotypes such as weaving or box-walking. \n Provide turnout, forage, companionship, exercise and safe opportunities to explore and choose.",
+      "important": "No"
+    },
+    {
+      "id": "c06e",
+      "theme": "Care",
+      "topic": "Understanding What Your Pony Needs",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 6,
+      "question": "Give two examples of the physical/mental effects on ponies of: \ne) Being scared (e.g., of people or other animals)",
+      "answer": "e) Being scared can cause: \n Raised head, tense muscles, wide eyes, flared nostrils, rapid breathing or sweating. \n Freezing, shying, rushing, spinning, barging or trying to escape. \n Repeated fear can reduce trust and learning; find the cause and make the situation safer and easier.",
       "important": "No"
     },
     {
@@ -446,7 +498,7 @@
       ],
       "number": 7,
       "question": "Explain how positive reinforcement works when training a pony",
-      "answer": "",
+      "answer": "* It means adding something the pony values immediately after the wanted behaviour. \n * Example: the pony stands quietly; you give a scratch or small food reward straight away. \n * This makes the correct behaviour more likely to happen again.",
       "important": "No"
     },
     {
@@ -459,7 +511,7 @@
       ],
       "number": 8,
       "question": "Talk about how pressure and release works when training a pony (this is negative reinforcement)",
-      "answer": "",
+      "answer": "* Apply the lightest suitable pressure to ask for a response. \n * The instant the pony gives the correct response, remove the pressure. \n * Example: light lead-rope pressure asks the pony to step forward; release immediately when it steps.",
       "important": "No"
     },
     {
@@ -485,7 +537,7 @@
       ],
       "number": 10,
       "question": "Understand that ponies are herd animals; give an example of when this might be a problem and how you might avoid it",
-      "answer": "",
+      "answer": "* Ponies naturally look to other horses for companionship and safety. \n * Separation may cause calling, rushing, barging or attempts to follow another pony. \n * Practise separation gradually, use secure handling and avoid unexpectedly leaving a pony alone.",
       "important": "No"
     },
     {
@@ -511,7 +563,7 @@
       ],
       "number": 12,
       "question": "Explain how to care for and work a pony that lives out at grass",
-      "answer": "",
+      "answer": "CARE: \n * Check the pony at least daily—preferably twice—for health, injury, movement, condition and all four feet. \n * Provide safe fencing, clean water, suitable grazing or forage, shelter and companionship. \n * Maintain farriery, dentistry, vaccinations and a veterinary-led parasite-control plan. \n\n WORK \n * Exercise should suit age, health, condition and fitness, increasing gradually. \n * Check feet, legs and tack before work; allow warm-up, cool-down, water and recovery. \n * Adjust work for weather, ground and grazing condition, and stop if the pony is tired, sore or unwell.",
       "important": "No"
     },
     {
@@ -524,7 +576,7 @@
       ],
       "number": 13,
       "question": "Know the main signs of health in the pony; recognise when a pony is too fat or too thin",
-      "answer": "",
+      "answer": "HEALTH \n * Bright, alert and interested, with a normal appetite and drinking pattern. \n * Clear eyes and nostrils, healthy coat and skin, normal droppings and urine. \n * Moves soundly, bears weight evenly and has normal temperature, pulse and breathing for that pony. \n\n BODY CONDITION \n * Look and feel the neck, shoulders, ribs, spine, loin and quarters—do not judge by the belly alone. \n * Too thin: ribs, spine or pelvis are too easy to see or feel and muscle may be poor. \n * Too fat: ribs are difficult to feel, with fat pads on the crest, shoulders, back or tail head.",
       "important": "Yes"
     },
     {
@@ -536,7 +588,7 @@
       ],
       "number": 14,
       "question": "Discuss how to check whether a paddock is safe",
-      "answer": "",
+      "answer": "* Secure fencing and gates, with no sharp edges, loose wire, holes or trapped areas. \n * Clean working water supply, suitable shelter and safe footing without dangerous mud or ice. \n * No poisonous plants, rubbish, machinery or unsafe livestock; grazing must suit the pony and group. \n\n Daily checks should include: \n Water, fencing and gates; shelter and ground conditions. \n * Poisonous plants, fallen branches, litter, holes and other new hazards. \n * Droppings, grass availability and whether every pony in the group can safely access resources.",
       "important": "Yes"
     },
     {
@@ -548,7 +600,7 @@
       ],
       "number": 15,
       "question": "Explain elementary rules of feeding and watering",
-      "answer": "",
+      "answer": "FEEDING \n * Base the diet on forage and feed according to bodyweight, condition, workload, age and health. \n * Make changes gradually; feed little and often and keep meal times consistent. \n * Use clean, good-quality feed, weigh rations, keep utensils clean and allow time after a large feed before hard work. \n\n WATERING \n * Provide unlimited clean, fresh water and check buckets or troughs every day \n * Offer water before and after work and during longer journeys; do not deliberately withhold it. \n * Monitor changes in drinking because they may indicate illness or a supply problem.",
       "important": "No"
     },
     {
@@ -561,7 +613,7 @@
       ],
       "number": 16,
       "question": "Show when to use positive rewards (food, scratching) when training a pony for stable manners",
-      "answer": "",
+      "answer": "* Choose one clear behaviour, such as standing quietly or moving back from the door. \n * Mark and reward the correct response immediately with a scratch or small food reward. \n * Deliver food safely away from your body and stop if the pony becomes muggy; be consistent.",
       "important": "No"
     },
     {
@@ -573,8 +625,8 @@
 	"C+"
       ],
       "number": 17,
-      "question": "Groom a grass kept pony",
-      "answer": "",
+      "question": "How do you groom a grass kept pony",
+      "answer": "* Secure the pony safely and check the whole body for heat, swelling, wounds, skin problems and ticks. \n * Pick out all four feet; remove loose mud with suitable brushes without stripping useful coat oils unnecessarily. \n * Be gentle over sensitive areas and avoid over-grooming a pony that relies on its natural weather protection.",
       "important": "No"
     },
     {
@@ -587,7 +639,7 @@
       ],
       "number": 18,
       "question": "Put on a tail bandage",
-      "answer": "",
+      "answer": "* The tail and bandage must be clean and dry; use even overlap and even pressure from top to bottom. \n * It must be secure but never tight, with no wrinkles or pressure points. \n * Check it frequently and never leave it on longer than necessary; remove immediately if there is swelling or discomfort.",
       "important": "No"
     },
     {
@@ -600,7 +652,7 @@
       ],
       "number": 19,
       "question": "Know when a pony needs shoeing",
-      "answer": "",
+      "answer": "* Overgrown, unbalanced or cracked feet; flares, chips or altered movement. \n * A shoe may be loose, worn or twisted, with raised clenches, missing nails or hoof growth beyond it. \n * Keep regular farrier appointments and contact the farrier promptly rather than waiting for a shoe to come off.",
       "important": "Yes"
     },
     {
@@ -613,7 +665,7 @@
       ],
       "number": 20,
       "question": "Put on and take off turn out rugs",
-      "answer": "[YouTube video](https://www.youtube.com/watch?v=L3O4tSzrE1I) on The Pony Club channel for Putting on Rugs",
+      "answer": "[YouTube video](https://www.youtube.com/watch?v=L3O4tSzrE1I) on The Pony Club channel for Putting on Rugs \n \n * Check the rug is the right type, size, clean and undamaged; keep control of the pony. \n * Put on: position the rug, fasten chest first, then surcingles and finally leg or fillet straps. \n * Remove in reverse order—leg/fillet straps, surcingles, then chest—before sliding it back and off calmly. \n *  It should sit in front of the withers without pressure, slipping or pulling backwards. \n * Shoulders must move freely; chest fastenings should not gape, pinch or rub. \n * Surcingles should cross with safe clearance beneath the belly and straps must be correctly arranged.",
       "important": "No"
     },
     {
@@ -639,7 +691,7 @@
       ],
       "number": 22,
       "question": "Have some knowledge of correctly fitting tack (saddle clearing the withers; height of the bit; noseband tightness)",
-      "answer": "",
+      "answer": "* The headpiece and browband should not pinch the ears; cheekpieces hold the bit evenly at a suitable height. \n * The noseband must be correctly positioned with enough space—commonly checked as two fingers over the nasal bone. \n * The throatlash, reins and fastenings must be secure without restricting breathing, swallowing or jaw movement. \n * The cloth is clean, flat and pulled into the gullet with no wrinkles. \n * The saddle sits level and balanced, clears the withers and spine, and does not rock or pinch. \n * The girth and straps are sound and correctly fastened; fit should be checked regularly by a qualified saddle fitter. \n * The neck and centre straps must lie safely without restricting the shoulders or pulling the saddle. \n * When raised, the rings should reach approximately to the top of the withers; the reins pass through both rings. \n * Rein stops are essential between the rings and the bit, and the martingale must not force the head down.",
       "important": "Yes"
     },
     {
@@ -651,7 +703,7 @@
       ],
       "number": 23,
       "question": "Talk about elementary care and cleaning of saddlery (tack care after daily exercise)",
-      "answer": "",
+      "answer": "* Wipe away sweat, mud and grease; clean the bit separately with clean water. \n * Clean leather with suitable products and allow damp tack to dry naturally away from direct heat. \n * Check stitching, buckles, reins, girth straps and stirrup leathers, then store tack safely and neatly.",
       "important": "No"
     },
     {
@@ -663,7 +715,7 @@
       ],
       "number": 24,
       "question": "Know how to clean a minor wound",
-      "answer": "",
+      "answer": "* First make the pony and handler safe and assess the wound. \n * Gently flush dirt away with plenty of clean water or sterile saline; use clean hands and materials. \n * Do not scrub deeply or apply powders and creams unless advised; monitor for heat, swelling, pain or discharge.",
       "important": "No"
     },
     {
@@ -676,7 +728,7 @@
       ],
       "number": 25,
       "question": "Know which wounds require veterinary attention",
-      "answer": "",
+      "answer": "* Deep, gaping, puncture or heavily contaminated wounds and uncontrolled bleeding. \n * Wounds near an eye, joint, tendon sheath, chest or abdomen, or those with an embedded object. \n * Call for lameness, severe pain, shock, infection or uncertainty; check tetanus vaccination status.",
       "important": "No"
     },
     {
@@ -688,7 +740,7 @@
       ],
       "number": 26,
       "question": "Understand the reasons for routine healthcare:\na) Equine influenza and tetanus vaccinations\nb) Dental care",
-      "answer": "",
+      "answer": "Equine Influenza: \n * Equine influenza is highly contagious and causes fever, coughing, nasal discharge and poor performance. \n * Vaccination reduces the risk and severity of disease and helps limit spread. \n * Follow the current Pony Club activity rules and the vet vaccination schedule. \n'n Tetanus: \n * Tetanus bacteria can enter through very small wounds and produce a potentially fatal toxin. \n * Horses are particularly susceptible, but vaccination gives effective protection. \n * Keep boosters current and ask the vet after a wound if vaccination status is uncertain. \n\n Dental Care: \n * Teeth wear unevenly and sharp points or other problems can cause pain. \n * Signs include dropping feed, slow eating, cribbing, weight loss, bad breath or resisting the bit. \n * A vet or qualified equine dental technician should check teeth at intervals suited to the pony.",
       "important": "No"
     },
     {
@@ -701,7 +753,7 @@
       ],
       "number": 27,
       "question": "Recognise when a pony is clearly lame",
-      "answer": "",
+      "answer": "* Uneven rhythm, shortened stride, reluctance to bear weight or difficulty turning. \n * In front-leg lameness, the head often rises when the lame leg bears weight and drops on the sound leg. \n * Stop work, check safely and tell a responsible adult; severe or sudden lameness needs veterinary advice.",
       "important": "No"
     },
     {
@@ -714,7 +766,7 @@
       ],
       "number": 28,
       "question": "Recognise signs that a pony might be unhappy (stressed, worried or anxious)",
-      "answer": "",
+      "answer": "* Tense posture, fixed stare, tight lips, flared nostrils, rapid breathing or sweating. \n * Calling, pawing, rushing, barging, tail swishing, reluctance to eat or withdrawal. \n * Repeated weaving, box-walking or crib-biting can signal a welfare problem; investigate the cause.",
       "important": "No"
     },
     {
@@ -727,7 +779,7 @@
       ],
       "number": 29,
       "question": "Understand the means of protecting a pony’s legs while travelling",
-      "answer": "",
+      "answer": "* Use well-fitting travel boots or correctly applied bandages and padding, suitable for the pony and journey. \n * Protection must be clean, secure, even and not restrict circulation or movement. \n * Accustom the pony before travel and check equipment during safe stops; protection cannot replace careful driving.",
       "important": "No"
     },
     {
@@ -740,7 +792,7 @@
       ],
       "number": 30,
       "question": "Explain how to load and unload a pony safely, considering yourself, the pony, and any helpers",
-      "answer": "",
+      "answer": "LOAD: \n * Use a safe vehicle on level ground, secure the ramp and partitions, and wear hat, gloves and sturdy footwear. \n * Use calm, competent helpers and a suitable enclosed area; lead straight and never wrap the rope around your hand. \n * Secure partitions as designed and tie only when appropriate for that vehicle and after the pony is safely positioned. \n\n UNLOAD: \n * Park on level ground in a secure area and check that the exit is clear. \n * Untie before releasing the partition or ramp where the vehicle design requires it. \n * Ask the pony to wait, then lead out slowly and straight with helpers positioned safely.",
       "important": "No"
     },
     {
@@ -753,7 +805,7 @@
       ],
       "number": 31,
       "question": "Explain how you can reduce waste related to looking after ponies.",
-      "answer": "",
+      "answer": "* Buy only what is needed and choose durable, repairable or refillable products. \n * Store feed and bedding well to prevent spoilage; use water and electricity carefully. \n * Repair, share, donate or repurpose safe equipment before replacing it.",
       "important": "No"
     },
     {
@@ -766,7 +818,7 @@
       ],
       "number": 32,
       "question": "List the items that can be recycled in your yard",
-      "answer": "",
+      "answer": "* Clean cardboard, paper, cans, glass and accepted plastics, depending on local collections. \n * Some feed bags, supplement tubs, baler twine and metal horseshoes can use specialist schemes. \n * Keep items clean and separated, and always follow the local authority or recycling provider’s rules.",
       "important": "No"
     },
     {
@@ -778,7 +830,7 @@
       ],
       "number": 33,
       "question": "Give two examples of how water may be wasted on yards",
-      "answer": "",
+      "answer": "* Leaving taps running while filling or cleaning buckets. \n * Unrepaired leaking taps, pipes, troughs or automatic drinkers. \n * Using a continuously running hose instead of a bucket, trigger nozzle or collected rainwater where safe.",
       "important": "No"
     },
     {
