@@ -790,7 +790,7 @@
 	"C+"
       ],
       "number": 34,
-      "question": "Name this farrier tool: \n <img src='https://www.horse-supplies.co.uk/wp-content/uploads/2023/06/Elico-Farriers-Rasp.jpg' alt='Farrier Tool 1' style='width:100px;'>",
+      "question": "Name this farrier tool: \n [farrier tool](https://www.horse-supplies.co.uk/wp-content/uploads/2023/06/Elico-Farriers-Rasp.jpg)",
       "answer": "Rasp",
       "important": "No"
     }
