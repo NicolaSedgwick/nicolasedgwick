@@ -348,7 +348,7 @@
       ],
       "number": 28,
       "question": "Ride independently in the open; explain why this might be a problem for a herd animal and suggest a solution",
-      "answer": "Why Riding Alone is Hard for a Herd Animal /n * Instinctive safety in numbers: Horses are prey animals that rely on the herd for protection, alerting one another to danger and fleeing together. /n * Separation anxiety (herd-bound behavior): When isolated from their group, horses often feel vulnerable and panicked. /n * Signs of distress: A herd-bound horse may call out (whinny), tense up, refuse forward movement, spin, or try to rush back to the barn or paddock. /n/n Solutions and Management /n * Gradual desensitization: Short, positive trips away from the group, increasing distance slowly over time. /n * Confident riding: Maintaining a calm, reassuring, and firm contact, using quiet leg and voice aids to keep the horse focused forward. /n * Occupying the horses mind: Asking for transitions, leg-yielding, or changing direction to keep their attention on the rider rather than the missing herd.",
+      "answer": "Why Riding Alone is Hard for a Herd Animal \n * Instinctive safety in numbers: Horses are prey animals that rely on the herd for protection, alerting one another to danger and fleeing together. \n * Separation anxiety (herd-bound behavior): When isolated from their group, horses often feel vulnerable and panicked. \n * Signs of distress: A herd-bound horse may call out (whinny), tense up, refuse forward movement, spin, or try to rush back to the barn or paddock. \n\n Solutions and Management \n * Gradual desensitization: Short, positive trips away from the group, increasing distance slowly over time. \n * Confident riding: Maintaining a calm, reassuring, and firm contact, using quiet leg and voice aids to keep the horse focused forward. \n * Occupying the horses mind: Asking for transitions, leg-yielding, or changing direction to keep their attention on the rider rather than the missing herd.",
       "important": "No"
     },
     {
@@ -844,6 +844,214 @@
       "number": 34,
       "question": "Name this farrier tool:\n![c34-farrier-tool.jpg](images/c34-farrier-tool.jpg)",
       "answer": "Rasp",
+      "important": "No"
+    },
+    {
+      "id": "c42",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 42,
+      "question": "Name this bit:\n![c42-bit.jpg](images/c42-bit.png)",
+      "answer": "Loose ring \n CHEEK DESIGN \n \n Recognition clue: Spot the completely round, freely moving rings.",
+      "important": "No"
+    },
+    {
+      "id": "c43",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 43,
+      "question": "Name this bit:\n![c43-bit.jpg](images/c43-bit.png)",
+      "answer": "Eggbutt \n CHEEK DESIGN \n \n Recognition clue: The cheeks are fixed and shaped like an egg - they do not slide.",
+      "important": "No"
+    },
+    {
+      "id": "c44",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 44,
+      "question": "Name this bit:\n![c44-bit.jpg](images/c44-bit.png)",
+      "answer": "Fulmer \n CHEEK DESIGN \n \n Recognition clue: Look for both long arms and loose rings.",
+      "important": "No"
+    },
+    {
+      "id": "c45",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 45,
+      "question": "Name this bit:\n![c45-bit.jpg](images/c45-bit.png)",
+      "answer": "French link \n MOUTHPIECE DESIGN \n \n Recognition clue: The centre plate is short, broad and lies flatter than a Dr Bristol plate.",
+      "important": "No"
+    },
+    {
+      "id": "c46",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 46,
+      "question": "Name this bit:\n![c46-bit.jpg](images/c46-bit.png)",
+      "answer": "Dick Christian \n MOUTHPIECE DESIGN \n \n Recognition clue: The centre link is noticeably longer and narrower than a French link.",
+      "important": "No"
+    },
+    {
+      "id": "c47",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 47,
+      "question": "Name this bit:\n![c47-bit.jpg](images/c47-bit.png)",
+      "answer": "Straight bar / mullen mouth \n MOUTHPIECE DESIGN \n \n Recognition clue: There is no joint at all.",
+      "important": "No"
+    },
+    {
+      "id": "c48",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 48,
+      "question": "Name this bit:\n![c48-bit.jpg](images/c48-bit.png)",
+      "answer": "Dr Bristol \n MOUTHPIECE DESIGN \n \n Recognition clue: Long rectangular plate at an angle; do not confuse it with the shorter, flatter French link.",
+      "important": "No"
+    },
+    {
+      "id": "c49",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 49,
+      "question": "Name this bit:\n![c49-bit.jpg](images/c49-bit.png)",
+      "answer": "Hanging snaffle (Baucher) \n CHEEK DESIGN \n \n Recognition clue: The bridle ring sits clearly above the rein ring.",
+      "important": "No"
+    },
+    {
+      "id": "c50",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 50,
+      "question": "Name this bit:\n![c50-bit.jpg](images/c50-bit.png)",
+      "answer": "English gag snaffle \n GAG BIT \n \n Recognition clue: Look for cords or leather running vertically through the cheek rings.",
+      "important": "No"
+    },
+    {
+      "id": "c51",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 51,
+      "question": "Name this bit:\n![c51-bit.jpg](images/c51-bit.png)",
+      "answer": "American gag \n GAG / LEVERAGE BIT \n \n Recognition clue: Straight side shanks above and below a sliding mouthpiece.",
+      "important": "No"
+    },
+    {
+      "id": "c52",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 52,
+      "question": "Name this bit:\n![c52-bit.jpg](images/c52-bit.png)",
+      "answer": "Belgian / Dutch / Continental gag \n MULTI-RING LEVERAGE BIT \n \n Recognition clue: A vertical stack of rings - the familiar <bubble> shape.",
+      "important": "No"
+    },
+    {
+      "id": "c53",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 53,
+      "question": "Name this bit:\n![c53-bit.jpg](images/c53-bit.png)",
+      "answer": "Mullen mouth Pelham \n CURB / COMBINATION BIT \n \n Recognition clue: Long shanks plus an unjointed curved mouthpiece.",
+      "important": "No"
+    },
+    {
+      "id": "c54",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 54,
+      "question": "Name this bit:\n![c54-bit.jpg](images/c54-bit.png)",
+      "answer": "Jointed Pelham \n CURB / COMBINATION BIT \n \n Recognition clue: Long Pelham shanks, but with a visible centre joint.",
+      "important": "No"
+    },
+    {
+      "id": "c55",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 55,
+      "question": "Name this bit:\n![c55-bit.jpg](images/c55-bit.png)",
+      "answer": "Kimblewick \n CURB / LEVERAGE BIT \n \n Recognition clue: D-shaped cheeks with one or two rein slots and no long Pelham shank.",
+      "important": "No"
+    },
+    {
+      "id": "c56",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 56,
+      "question": "Name this bit:\n![c56-bit.jpg](images/c56-bit.png)",
+      "answer": "Double bridle: loose-ring bridoon + sliding-cheek Weymouth \n DOUBLE BRIDLE \n \n Recognition clue: Small loose rings above; separate Weymouth with long shanks below.",
+      "important": "No"
+    },
+    {
+      "id": "c57",
+      "theme": "Care",
+      "topic": "Bits",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 57,
+      "question": "Name this bit:\n![c57-bit.jpg](images/c57-bit.png)",
+      "answer": "Double bridle: eggbutt bridoon + fixed-cheek Weymouth \n DOUBLE BRIDLE \n \n Recognition clue: Fixed eggbutt bridoon above and fixed Weymouth shanks below.",
       "important": "No"
     },
     {
