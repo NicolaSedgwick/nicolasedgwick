@@ -127,7 +127,6 @@
     var topics = unique(allCards
       .filter(function (c) { return (!wanted || c.theme === wanted) && matchesTest(c); })
       .map(function (c) { return c.topic; }));
-      .sort(function (a, b) { return a.localeCompare(b, undefined, { sensitivity: 'base' }); });
 
     el.topic.length = 1;
     topics.forEach(function (t) { el.topic.appendChild(new Option(t, t)); });
