@@ -1154,7 +1154,7 @@
       ],
       "number": 1,
       "question": "Talk about how you would keep yourself safe when riding",
-      "answer": "",
+      "answer": "* Wear a correctly fitted, current-standard hat and suitable footwear; use safe, checked tack.\n * Ride a suitable horse in a suitable place, tell someone your route and carry identification/phone where appropriate. \n * Follow road, arena and countryside rules; adjust plans for weather, ground, traffic and the horse.",
       "important": "Yes"
     },
     {
@@ -1166,7 +1166,7 @@
       ],
       "number": 2,
       "question": "Explain how to keep others, including the ponies/horses, safe when riding in a group",
-      "answer": "",
+      "answer": "* Follow the instructor or ride leader, communicate clearly and keep a safe distance. \n * Do not overtake, race or change pace without warning; pass left-to-left in an arena unless instructed otherwise. \n * Consider nervous, young or green horses and stop if a horse or rider is in difficulty.",
       "important": "Yes"
     },
     {
@@ -1178,7 +1178,7 @@
       ],
       "number": 3,
       "question": "Describe what it feels like to ride a pony or horse that is lame",
-      "answer": "",
+      "answer": "* The rhythm may feel uneven, shortened or “lumpy”, with one stride different from the others. \n * The horse may feel reluctant to go forward, uneven on turns or as though one side drops or rises. \n * Stop, dismount safely and report it—do not continue to test the horse by riding.",
       "important": "No"
     },
     {
@@ -1190,7 +1190,7 @@
       ],
       "number": 4,
       "question": "Talk about what it feels like to ride a pony or horse that is tired",
-      "answer": "",
+      "answer": "* Slower reactions, loss of impulsion or balance, heavier breathing and less willingness to continue. \n * The stride may shorten and jumping or coordination may deteriorate. \n * Slow down, stop appropriately and begin recovery care before fatigue becomes dangerous.",
       "important": "Yes"
     },
     {
@@ -1202,7 +1202,7 @@
       ],
       "number": 5,
       "question": "Describe what it feels like to ride a pony or horse that is stressed",
-      "answer": "",
+      "answer": "* Tense, hurried, distracted, over-reactive or unwilling to move. \n * The horse may brace, hollow, shake its head, swish its tail, call or try to escape. \n * Reduce pressure, move to a safer/easier situation and consider pain, fear, tack and environment.",
       "important": "Yes"
     },
     {
@@ -1214,7 +1214,7 @@
       ],
       "number": 6,
       "question": "List the dangers of over-working a pony or horse that is overweight or unfit",
-      "answer": "",
+      "answer": "* Heat stress, exhaustion and slow recovery. \n * Muscle, tendon, ligament or joint injury and excessive strain on heart and lungs. \n * An overweight horse also has increased laminitis risk; fitness and workload must build gradually.",
       "important": "No"
     },
     {
@@ -1226,7 +1226,7 @@
       ],
       "number": 7,
       "question": "Understand the welfare issues surrounding the use of spurs",
-      "answer": "",
+      "answer": "* Spurs must refine an established leg aid, never punish or replace correct training. \n * Poor fit, unstable legs or excessive force can cause fear, pain, rubs or skin injury. \n * Use only when permitted, appropriate and supervised; check the horse after use and stop if there is harm.",
       "important": "Yes"
     },
     {
@@ -1238,7 +1238,7 @@
       ],
       "number": 8,
       "question": "List the first three points in the Scale of Training",
-      "answer": "",
+      "answer": "Rhythm, Suppleness and Contact",
       "important": "Yes"
     },
     {
@@ -1250,7 +1250,7 @@
       ],
       "number": 10,
       "question": "Discuss how you would recognise a correct response from your pony/horse to the aids",
-      "answer": "",
+      "answer": "When you apply an aid, a trained horse should respond instantly, calmly, and without resistance. \n * Leg Aids (Forward/Lateral): The pony steps forward immediately with purpose into a steady rhythm without needing to be nagged. If asking for a lateral movement (like leg-yield), the pony steps sideways smoothly without losing forward momentum or tilting its head. \n * Hand Aids (Rein/Regulating): The pony slows down, transitions, or turns smoothly without pulling, tossing its head, or opening its mouth. They accept a soft contact and stay relaxed. \n * Seat and Weight Aids: The pony adjusts its tempo or prepares for a transition simply because you deepened your seat or adjusted your posture, demonstrating that they are balanced and listening.",
       "important": "No"
     },
     {
@@ -1262,7 +1262,7 @@
       ],
       "number": 12,
       "question": "Discuss the advantages and disadvantages of using positive reinforcement in training",
-      "answer": "",
+      "answer": "Positive reinforcement means adding something the horse values immediately after the wanted behaviour. \n * Example: when the horse stands quietly for clipping, say a consistent marker and give a small food reward or scratch. \n * The reward makes the behaviour more likely to happen again. \n * Advantages - consistent behaviour change, builds strong trust \n * Disadvantages - practicality issues with reinforcing good behaviour during ridden work, accidental rewarding if treats are mistimed.",
       "important": "No"
     },
     {
@@ -1274,7 +1274,7 @@
       ],
       "number": 13,
       "question": "Give an example of a behavioural problem and how you might correct it",
-      "answer": "",
+      "answer": "Examples could be rushing for fences, refusing to leave the yard/herd or biting when being tacked up. Before correcting the behaviour you must check that it is not caused by a pain or injury - prioritise pony/horse welfare. Correct the behaviour using positive reinforcement and gradual changes.",
       "important": "No"
     },
     {
@@ -1286,7 +1286,7 @@
       ],
       "number": 14,
       "question": "Cover the outline of The Spurs Test",
-      "answer": "",
+      "answer": "The Pony Club Spurs Test assesses a rider’s capability, leg stability, and welfare awareness to safely wear spurs at Pony Club activities. \n\n Requirements are: \n Stable Lower Leg \n * Independent Seat and Still Hands \n * Intentional Use \n * Aids Coordination \n * Welfare & Theory Knowledge",
       "important": "Yes"
     },
     {
@@ -1297,8 +1297,8 @@
         "C+"
       ],
       "number": 15,
-      "question": "Explain the importance of timing when correcting a pony’s/horse’s mistake",
-      "answer": "",
+      "question": "Explain the importance of timing when correcting a pony/horse mistake",
+      "answer": "* The consequence must follow immediately so the horse can connect it with the behaviour. \n * Use the same clear cue and response each time; release pressure as soon as the correct response occurs. \n * Late or inconsistent correction confuses the horse and can create anxiety.",
       "important": "No"
     },
     {
@@ -1309,8 +1309,8 @@
         "C+"
       ],
       "number": 16,
-      "question": "Explain the importance of monitoring a pony’s/horse’s level of stress or excitement when training",
-      "answer": "",
+      "question": "Explain the importance of monitoring a ponys/horses level of stress or excitement when training",
+      "answer": "* A highly stressed horse cannot learn safely or effectively. \n * Watch posture, breathing, expression, movement and willingness to eat or respond. \n * Pause, simplify the task or return to an easier step before the horse becomes overwhelmed.",
       "important": "No"
     },
     {
@@ -1322,7 +1322,7 @@
       ],
       "number": 17,
       "question": "Explain to the importance of progressive/easy achieve steps when training ponies/horses",
-      "answer": "",
+      "answer": "* The horse is more likely to understand and succeed, allowing the correct response to be rewarded promptly. \n * Short, progressive steps reduce frustration, fear and physical overload. \n * If stress or errors increase, return to the last easy step and rebuild gradually.",
       "important": "No"
     },
     {
@@ -1334,7 +1334,7 @@
       ],
       "number": 18,
       "question": "Discuss the advantages to your pony/horse of maintaining a correct riding position",
-      "answer": "",
+      "answer": "A correct riding position acts as a balanced load that reduces physical strain on the horse and allows for clearer communication through coordinated aids.",
       "important": "Yes"
     },
     {
@@ -1346,7 +1346,7 @@
       ],
       "number": 21,
       "question": "Ride a variety of turns and circles demonstrating rider straightness and balance of the pony/horse that is suitable for its stage of training",
-      "answer": "",
+      "answer": "Examiners will be looking for rider straightness, maintaining the pony's balance, and riding smooth transitions through various turns and circles with the correct bend.",
       "important": "No"
     },
     {
@@ -1358,7 +1358,7 @@
       ],
       "number": 23,
       "question": "Show ‘turn on the forehand’, from halt, in both directions",
-      "answer": "",
+      "answer": "A turn on the forehand in Pony Club testing is a fundamental dressage and control manoeuver where the horse pivots its hindquarters in a circle around a relatively stationary front end. \n\n How to Execute a Turn on the Forehand \n * The Starting Position: Begin from an active, square halt (often introduced at lower levels or practiced parallel to an arena fence/rail for guidance). \n * The Bend: Ask for a slight flexion/bend at the poll in the direction you want to turn using the inside rein. \n * The Driving Leg: Place your inside leg slightly behind the girth and apply rhythmic, on-off pressure to ask the hindquarters to step away and move sideways. \n * The Supporting Aids: Keep your outside leg at the girth to control forward/backward movement and energy, while the outside rein maintains steady contact to prevent the horse from walking forward out of the halt. \n * The Pivot: The horse should cross its inside hind leg over and in front of the outside hind leg while the front legs stay nearly in place (or describe a very tiny circle). \n * The Finish: Complete a 90-degree or 180-degree turn as required, then immediately ride straight forward into a walk.",
       "important": "No"
     },
     {
@@ -1370,7 +1370,7 @@
       ],
       "number": 24,
       "question": "Know the aids for, and show, leg yielding at walk",
-      "answer": "",
+      "answer": "In a leg yield, the pony moves forward and sideways at the same time on a diagonal line. The pony’s body remains straight, with only a slight flexion at the poll away from the direction of travel.",
       "important": "No"
     },
     {
@@ -1382,7 +1382,7 @@
       ],
       "number": 25,
       "question": "Ride with reins in one hand",
-      "answer": "",
+      "answer": "* Combine the reins: Gather both reins neatly into one hand (usually the left hand), typically by placing one rein over the other or placing an index finger between them if bridging. \n * Thumb placement: Keep your thumb pointing down and slightly across the top to trap the reins securely and prevent slipping. \n * Free hand position: Let your unused hand hang naturally and quietly by your side, unless you are required to hold a whip or perform a specific test movement.",
       "important": "No"
     },
     {
@@ -1394,7 +1394,7 @@
       ],
       "number": 26,
       "question": "Describe the response to the aids of the pony or horse that you are riding",
-      "answer": "",
+      "answer": "Riders must demonstrate correct application of diagonal aids and show that the pony is reacting positively to the leg by stepping forward into a steady contact.",
       "important": "No"
     },
     {
@@ -1406,7 +1406,7 @@
       ],
       "number": 27,
       "question": "Describe the extent to which the pony/horse that you are riding is working forwards in a suitable rhythm and tempo, relaxed and calm",
-      "answer": "",
+      "answer": "Examiners check if the pony responds promptly to the leg without the rider having to constantly nag. At C+ level examiners will expect you to describe whether your horse/pony moves with regular, even hoofbeats, a steady tempo, and active forward energy without rushing or dragging",
       "important": "No"
     },
     {
@@ -1418,7 +1418,7 @@
       ],
       "number": 28,
       "question": "Comment on the suppleness of the pony/horse that you are riding",
-      "answer": "",
+      "answer": "* Lateral suppleness - how well the pony bends around your leg, consistency through circles/turns, and evenness of rein contact on both sides /n * Longitudinal suppleness - Softness through the poll and jaw, swinging smoothly through the back and acceptance of transitions without raising head or tensing \n * Signs of a Supple Horse (Positive Comments) \n Tail: Carried loosely and swinging gently in rhythm with the stride. \n Mouth: Soft, relaxed, and chewing lightly on the bit (producing a small amount of white foam). \n Ears: Relaxed, floppy, or listening to the rider without tension. \n Back: Feels soft, comfortable, and easy to sit to (the saddle feels like it absorbs the movement).",
       "important": "No"
     },
     {
@@ -1430,7 +1430,7 @@
       ],
       "number": 29,
       "question": "Understand the reasons for the tack and equipment the pony/horse you are riding is wearing",
-      "answer": "",
+      "answer": "The Pony Club tests your understanding of tack and equipment to ensure rider safety, horse welfare, and clear communication during riding. \n\n Key Equipment and Their Reasons \n * Saddle: Spreads the rider's weight evenly across the pony's back and helps the rider maintain a balanced, secure position. It must fit properly to prevent painful sores or bruising. \n * Girth: Secures the saddle firmly in place on the pony's back so it does not slip sideways during movement. \n * Bridle and Bit: Connects the rider's hands to the pony's mouth for steering, stopping, and regulating speed through gentle pressure cues. \n * Stirrups and Leathers: Support the rider's feet and help maintain balance. They must have a 7mm (¼”) clearance on each side of the boot so the foot cannot get trapped during a fall.",
       "important": "No"
     },
     {
@@ -1442,7 +1442,7 @@
       ],
       "number": 30,
       "question": "If spurs are worn, explain the reasons why, in detail and with understanding",
-      "answer": "",
+      "answer": "In The Pony Club, spurs are worn strictly as an additional aid to refine and back up leg pressure for more precise communication, never to make a horse go faster or to punish them.",
       "important": "Yes"
     },
     {
@@ -1454,7 +1454,7 @@
       ],
       "number": 33,
       "question": "Jump a variety of show jumping and cross-country fences, including combination fences (maximum height, 80 cm)",
-      "answer": "",
+      "answer": "Examiners look for a supple, balanced position when you jump a variety of show jumping and cross-country fences (including combinations).",
       "important": "No"
     },
     {
@@ -1466,7 +1466,7 @@
       ],
       "number": 34,
       "question": "Jump up and down slopes",
-      "answer": "",
+      "answer": "Examiners look for correct rhythm, an independent seat that absorbs the change in gradient, appropriate stirrup length for undulating terrain, and keeping the horse straight and confident",
       "important": "No"
     },
     {
@@ -1478,7 +1478,7 @@
       ],
       "number": 35,
       "question": "Identify which of the fences you jumped was the best and explain why",
-      "answer": "",
+      "answer": "It's good practice to reflect on your own performance.",
       "important": "No"
     },
     {
@@ -1490,7 +1490,7 @@
       ],
       "number": 37,
       "question": "Understand and discuss distances for a two-stride double for the pony/horse you are riding",
-      "answer": "",
+      "answer": "A standard two-stride double in the Pony Club is set approximately 9.2 meters (30 to 36 feet, or about 10 to 12 paces) apart, depending on the size of the pony or horse.",
       "important": "No"
     },
     {
@@ -1502,7 +1502,7 @@
       ],
       "number": 38,
       "question": "Explain what is meant by the term ‘related distances between fences’",
-      "answer": "",
+      "answer": "A related distance is a pair of separate, numbered fences set at a measured distance from three to six canter strides apart. The fences can be in a straight line or a slight bending line.",
       "important": "No"
     },
     {
@@ -1514,7 +1514,7 @@
       ],
       "number": 39,
       "question": "Show and/or discuss the immediate care of your pony/horse on finishing the cross country",
-      "answer": "",
+      "answer": "Immediate post-cross-country care requires: \n * walking your pony to lower their heart rate and let their breathing return to normal \n * sponging or hosing off sweat and mud after breathing has settled (to prevent chills and muscle stiffness) \n * checking for injuries or lost shoes \n * offer controlled sips of water (not ice cold)",
       "important": "No"
     },
     {
@@ -1526,7 +1526,7 @@
       ],
       "number": 1,
       "question": "Explain how you would keep yourself safe when working alone with ponies/horses",
-      "answer": "",
+      "answer": "* Tell someone where you are and when you expect to finish; keep a charged phone with you. \n * Wear suitable boots, gloves and a riding hat when the task or horse requires it. \n * Use safe handling and tying-up methods; do not take avoidable risks with an unfamiliar or difficult horse. \n * Know the yard address, emergency contacts, first-aid kit and fire procedure.",
       "important": "No"
     },
     {
@@ -1538,7 +1538,7 @@
       ],
       "number": 2,
       "question": "Outline your responsibilities towards others to keep them safe when you are working on the same yard",
-      "answer": "",
+      "answer": "* Keep passages, doorways and working areas clear. \n * Put tools away safely, close gates and warn others about hazards or difficult horses. \n * Follow yard rules, use equipment correctly and consider children, visitors and less experienced people.",
       "important": "Yes"
     },
     {
@@ -1550,7 +1550,7 @@
       ],
       "number": 3,
       "question": "Explain how you should behave to keep ponies/horses safe in stables and on the yard",
-      "answer": "",
+      "answer": "* Stay calm and predictable; approach where the horse can see or hear you. \n * Do not shout, run, make sudden movements or leave doors and gates unsecured. \n * Tie safely, avoid crowding horses and keep feed, machinery and hazards controlled.",
       "important": "No"
     },
     {
@@ -1562,7 +1562,7 @@
       ],
       "number": 4,
       "question": "List features of safe and unsafe yard environments",
-      "answer": "",
+      "answer": "SAFE \n * Non-slip, well-drained surfaces; good lighting and ventilation. \n * Secure fencing, gates and stable fittings with no sharp edges or projections. \n * Clear gangways, safely stored tools and feed, working fire precautions and accessible water. \n\n UNSAFE \n Slippery or uneven surfaces, trailing hoses, clutter and badly stored tools. \n * Broken fencing, protruding nails, unsecured doors, exposed wiring or unsafe stacking. \n * Poor lighting or ventilation, blocked exits, loose dogs and uncontrolled vehicles.",
       "important": "No"
     },
     {
@@ -1574,7 +1574,7 @@
       ],
       "number": 6,
       "question": "Explain how you could minimise the amount of time that a stabled pony or horse is without food overnight (whilst ensuring that it did not become overweight)",
-      "answer": "",
+      "answer": "* Base the ration on bodyweight and body condition, using analysed lower-energy forage if needed. \n * Split forage into several locations or use a correctly fitted small-hole net to extend eating time. \n * Soaking may reduce water-soluble carbohydrate, but ask an appropriate nutrition professional for an individual plan.",
       "important": "No"
     },
     {
@@ -1586,7 +1586,7 @@
       ],
       "number": 7,
       "question": "Talk about things you can do to make time in the stable more enjoyable for ponies and horses",
-      "answer": "",
+      "answer": "* Provide frequent forage, safe horse contact, turnout and suitable exercise. \n * Offer choice and variety: several forage stations, safe browsing, grooming or scratching opportunities. \n * Use stable toys only when safe and useful for that individual; monitor whether they reduce or increase stress.",
       "important": "No"
     },
     {
@@ -1598,7 +1598,7 @@
       ],
       "number": 10,
       "question": "Discuss the equine flight response; give an example of an event that might induce the flight response and suggest how this could be avoided in a yard environment",
-      "answer": "",
+      "answer": "* A horse’s natural survival response is to move rapidly away from a perceived threat. \n * Triggers may include sudden noise, movement, unfamiliar objects or feeling trapped. \n * Reduce risk through calm handling, clear escape routes, gradual familiarisation and avoiding sudden surprises.",
       "important": "Yes"
     },
     {
@@ -1609,8 +1609,8 @@
         "C+"
       ],
       "number": 15,
-      "question": "Explain the importance of timing and consistency when correcting a pony’s/horse’s mistake",
-      "answer": "",
+      "question": "Explain the importance of timing and consistency when correcting a ponys/horses mistake",
+      "answer": "* The consequence must follow immediately so the horse can connect it with the behaviour. \n * Use the same clear cue and response each time; release pressure as soon as the correct response occurs. \n * Late or inconsistent correction confuses the horse and can create anxiety.",
       "important": "No"
     },
     {
@@ -1621,8 +1621,8 @@
         "C+"
       ],
       "number": 16,
-      "question": "Explain the importance of monitoring stress when correcting a pony’s mistakes/training",
-      "answer": "",
+      "question": "Explain the importance of monitoring stress when correcting a ponys mistakes/training",
+      "answer": "* A highly stressed horse cannot learn safely or effectively. \n * Watch posture, breathing, expression, movement and willingness to eat or respond. \n * Pause, simplify the task or return to an easier step before the horse becomes overwhelmed.",
       "important": "No"
     },
     {
@@ -1634,7 +1634,7 @@
       ],
       "number": 18,
       "question": "Discuss the care and exercise of a horse or pony that’s fully or partially stabled",
-      "answer": "",
+      "answer": "* Adequate forage and water, a clean bed, ventilation and social contact. \n * Daily turnout and exercise appropriate to age, health and fitness. \n * Routine grooming, foot care, health checks and enough time to rest.",
       "important": "No"
     },
     {
@@ -1646,7 +1646,7 @@
       ],
       "number": 19,
       "question": "Talk about keeping the stable environment clean and tidy",
-      "answer": "",
+      "answer": "* Remove droppings and wet bedding; maintain a clean, dry bed and clear doorway. \n * Clean buckets and mangers; remove stale feed and cobwebs. \n * Store tools safely, sweep passages and maintain drainage and ventilation.",
       "important": "No"
     },
     {
@@ -1657,8 +1657,8 @@
         "C+"
       ],
       "number": 20,
-      "question": "Discuss ponies’/horses’ need for fresh water",
-      "answer": "",
+      "question": "Discuss ponies/horses need for fresh water",
+      "answer": "* Water is needed for digestion, temperature control and every body system. \n * Provide clean, fresh water at all times and check buckets or troughs at least daily. \n * Monitor intake: a marked change can be an early sign of illness.",
       "important": "Yes"
     },
     {
@@ -1670,7 +1670,7 @@
       ],
       "number": 21,
       "question": "Discuss the importance of forage in the diet",
-      "answer": "",
+      "answer": "The horse evolved to eat fibre for many hours each day. \n * Forage supports gut movement and healthy microbes, encourages chewing and saliva, and helps reduce boredom. \n * Feed should be based on the individual horses bodyweight, workload, health and body condition.",
       "important": "Yes"
     },
     {
@@ -1682,7 +1682,7 @@
       ],
       "number": 22,
       "question": "Know the differences between hay, haylage, and other forages",
-      "answer": "",
+      "answer": "* Hay is grass dried to a low moisture level before baling. \n * Haylage is baled with more moisture and wrapped airtight so it preserves by controlled fermentation. \n * Haylage must be stored and used carefully after opening; neither is automatically more suitable for every horse.",
       "important": "No"
     },
     {
@@ -1694,7 +1694,7 @@
       ],
       "number": 23,
       "question": "Discuss different methods of providing hay to horses/ponies",
-      "answer": "",
+      "answer": "* On the ground - most natural grazing posture but ponies can eat too quickly and hay gets soiled  \n * Fully filled haynet - keeps hay off the floor and slows down eating, but is an unnaturally high eating position and can cause muscle tension \n * Partially filled haynet - Significantly slows eating but can cause high frustration for ponies  \n * Slow feeder hayboxes - combines natural eating posture with physical grid to slow eating and keep hay clean, but can be expensive and need regular checks for dental marks",
       "important": "No"
     },
     {
@@ -1706,7 +1706,7 @@
       ],
       "number": 24,
       "question": "Explain how you would select a feed for a pony/horse",
-      "answer": "",
+      "answer": "* Assess bodyweight and condition, age, health, temperament, workload and forage quality. \n * Choose the simplest suitable balanced ration and follow the manufacturer’s instructions by weight. \n * Make changes gradually and seek qualified nutrition or veterinary advice when needed.",
       "important": "No"
     },
     {
@@ -1718,7 +1718,7 @@
       ],
       "number": 25,
       "question": "Explain how you would prepare different feeds (e.g. sugar beet)",
-      "answer": "",
+      "answer": "SOAKING SUGAR BEET: \n Traditional dried sugar beet absorbs a large amount of water and can swell; it must be soaked exactly as the manufacturer directs. \n * Some modern “quick-soak” products need much less time—always read the bag. \n * Sugar beet is a digestible fibre feed and is naturally a useful source of calcium. \n\n PROCESSING OR SOAKING WHOLE GRAINS: \n The hard outer coat can allow some whole grain to pass through poorly digested. \n * Rolling, crushing or bruising breaks the husk and improves access to the starch. \n * Only soak when appropriate and feed freshly prepared grain; make all diet changes gradually.",
       "important": "No"
     },
     {
@@ -1730,7 +1730,7 @@
       ],
       "number": 26,
       "question": "Discuss how feeding would differ between a stabled pony/horse and one kept at grass",
-      "answer": "",
+      "answer": "* A stabled horse usually needs conserved forage because it cannot graze freely; exercise and boredom must also be managed. \n * A grass-kept horse may get much of its energy from pasture but still needs water, minerals and extra forage when grazing is poor. \n * Both need intake adjusted to body condition, workload, season and health.",
       "important": "No"
     },
     {
@@ -1742,7 +1742,7 @@
       ],
       "number": 28,
       "question": "Discuss the advantages and disadvantages of washing horses and ponies, and know how to do this correctly",
-      "answer": "",
+      "answer": "* Advantages: removes sweat, mud and stains; cools after work; allows skin inspection. \n * Disadvantages: chilling, skin irritation, removal of protective oils and poor drying in cold weather. \n * Wash only when needed and suit the method to weather, facilities and the horse.",
       "important": "No"
     },
     {
@@ -1754,7 +1754,7 @@
       ],
       "number": 29,
       "question": "Discuss when trimming might be required, which parts of the pony/horse you would trim and which parts you would not trim.",
-      "answer": "",
+      "answer": "* Trimming may tidy a horse for comfort, hygiene, tack fit or presentation. \n * Common areas include bridle path, jawline, feathers or tail, according to type and activity. \n * Do not remove sensory whiskers unless medically necessary; avoid trimming inside ears and follow current rules.",
       "important": "No"
     },
     {
@@ -1766,7 +1766,7 @@
       ],
       "number": 30,
       "question": "Put on a stable bandage",
-      "answer": "",
+      "answer": "* Use clean, dry padding with even overlap and no wrinkles. \n * Apply firm, even pressure—not tight—and fasten securely on the outside of the leg. \n * Bandages should match as a pair; check circulation, slipping, heat or swelling and remove if concerned.",
       "important": "No"
     },
     {
@@ -1777,8 +1777,8 @@
         "C+"
       ],
       "number": 34,
-      "question": "Explain the reasons for trimming and shoeing ponies’/horse’s feet",
-      "answer": "",
+      "question": "Explain the reasons for trimming and shoeing ponies/horses feet",
+      "answer": "* Regular trimming maintains balance and prevents excessive growth, cracks and distortion. \n * Shoes may protect against wear, improve traction or support a veterinary/farriery need. \n * Not every horse needs shoes; the plan depends on hoof quality, work, surfaces, conformation and health.",
       "important": "Yes"
     },
     {
@@ -1790,7 +1790,7 @@
       ],
       "number": 35,
       "question": "Describe a general purpose shoe",
-      "answer": "",
+      "answer": "* A plain, correctly fitted shoe shaped to follow and support the hoof. \n * It normally has suitable nail holes and may have toe or quarter clips according to the foot and work. \n * The farrier selects the material, section and features for the individual horse.",
       "important": "No"
     },
     {
@@ -1802,7 +1802,7 @@
       ],
       "number": 36,
       "question": "Describe a well cared for foot (shod or unshod)",
-      "answer": "",
+      "answer": "* Clean, sound hoof wall without serious cracks, excessive flare or overgrowth. \n * Healthy frog and sole, no foul smell or discharge, and no unusual heat or strong digital pulse. \n * The foot is balanced; a shoe is secure and correctly fitted with smooth clenches.",
       "important": "No"
     },
     {
@@ -1814,7 +1814,7 @@
       ],
       "number": 38,
       "question": "Know the names and uses of the farrier’s tools",
-      "answer": "",
+      "answer": "From rasp to shoeing hammer, use the picture flashcards under the Farrier Tools topic",
       "important": "No"
     },
     {
@@ -1826,7 +1826,7 @@
       ],
       "number": 39,
       "question": "Name the external and internal parts of the foot",
-      "answer": "",
+      "answer": "INTERNAL \n * Pedal/coffin bone, navicular bone and lower end of the short pastern bone. \n * Deep digital flexor tendon, navicular bursa and sensitive laminae. \n * Digital cushion, lateral cartilages and blood vessels. \n\n EXTERNAL \n Hoof wall, toe, quarters, heels and bars. \n * Sole, frog, central sulcus and collateral grooves. \n * White line around the junction of wall and sole.",
       "important": "No"
     },
     {
@@ -1838,7 +1838,7 @@
       ],
       "number": 41,
       "question": "Recognise a variety of bits that are allowed in Pony Club activities",
-      "answer": "",
+      "answer": "From loose ring to hanging snaffle bits, use the picture flashcards under the Bits topic",
       "important": "No"
     },
     {
@@ -1850,7 +1850,7 @@
       ],
       "number": 42,
       "question": "Explain the action(s) of the bit you normally ride in",
-      "answer": "",
+      "answer": "A horse bit works by applying direct or leverage pressure to sensitive areas of the horse's head and mouth—such as the tongue, bars, lips, and poll—to communicate rein cues. \n\n Common Bit Types and Their Actions \n * Snaffle Bit: Uses direct pressure with no leverage or curb chain. When you pull the rein, it presses on the tongue, lips, and bars of the mouth. Jointed snaffles can create a <nutcracker> action on the tongue and palate. The reaction is generally an upward or forward response. \n * Curb / Lever Bit: Uses shanks to create leverage, multiplying the rein pressure. It applies downward pressure on the mouth, pressure on the poll to lower the head, and chin groove pressure via a curb chain. \n * Pelham Bit: Combines a snaffle and curb action on a single mouthpiece using two sets of reins. The top rein gives a direct snaffle action (upward), while the bottom rein provides leverage and curb action (downward). \n * Gag Bit: Features running cheek pieces through holes in the bit rings. Pulling the reins creates a strong upward action on the corners of the mouth and some poll pressure, lifting the horse's head and neck. \n * Bitless Bridle: Operates without a mouthpiece, placing pressure instead on the poll, face, and jaw.",
       "important": "No"
     },
     {
@@ -1861,8 +1861,8 @@
         "C+"
       ],
       "number": 44,
-      "question": "Know horses and ponies’ normal resting respiration rate and show how to take it",
-      "answer": "",
+      "question": "Know horses and ponies normal resting respiration rate and show how to take it",
+      "answer": "* A commonly used adult resting range is about 8–16 breaths per minute; know the individual horse’s normal. \n * Watch the flank or nostrils while the horse is quiet; one rise-and-fall is one breath. \n * Count for 30 seconds and double it, or count for a full minute.",
       "important": "No"
     },
     {
@@ -1874,7 +1874,7 @@
       ],
       "number": 46,
       "question": "Know what might cause colic",
-      "answer": "",
+      "answer": "* Sudden feed changes, too much concentrate, poor-quality feed or inadequate forage and water. \n * Impaction, gas, sand, parasites, dental problems or intestinal displacement. \n * Risk can be reduced by gradual changes, forage-based feeding, water, movement, dental care and parasite control.",
       "important": "No"
     },
     {
@@ -1886,7 +1886,7 @@
       ],
       "number": 47,
       "question": "Estimate the body condition (fat) score of a named horse, using the 0–5 scale for fat scoring",
-      "answer": "",
+      "answer": "* Look and feel—do not rely on sight alone—at the neck, withers, shoulders, ribs, back/loin and quarters. \n * 0 is emaciated and 5 is very obese; half scores can be used. \n * A moderate score around 2.5–3 is often appropriate, but ideal condition varies with the individual and veterinary advice.",
       "important": "No"
     },
     {
@@ -1898,7 +1898,7 @@
       ],
       "number": 48,
       "question": "State whether the body condition (fat) score is healthy or unhealthy",
-      "answer": "",
+      "answer": "HEALTHY: \n * Appearance: The horse looks smooth and even. Ribs cannot be seen by eye, but you can easily feel them with light pressure. \n * Neck and Rump: There is no crest on the neck, and the hindquarters have a smooth, rounded curve \n\n UNHEALTHY: \n * Underweight - Bones like the ribs, spine, pelvis, and tailhead are visibly sticking out, showing a lack of fat and muscle cover due to poor nutrition, illness, or parasites. \n * Overweight / Obese - The horse has heavy fat deposits forming a hard crest on the neck, a gutter or crease along the spine, and bulging fat behind the shoulders or tailhead, which puts them at high risk for laminitis and metabolic issues.",
       "important": "No"
     },
     {
@@ -1910,7 +1910,7 @@
       ],
       "number": 50,
       "question": "Know how to care for a wound until the vet arrives",
-      "answer": "",
+      "answer": "* Keep horse and handler safe; call the vet for serious or high-risk wounds. \n * Control heavy bleeding with clean direct pressure. Do not remove an embedded object. \n * If advised, gently flush superficial contamination with clean water or saline; avoid powders and creams unless directed.",
       "important": "Yes"
     },
     {
@@ -1922,7 +1922,7 @@
       ],
       "number": 51,
       "question": "Know how to cool the legs of a horse or pony after hard work",
-      "answer": "",
+      "answer": "* Use plenty of cold water continuously over the lower legs for an effective period, or follow the individual aftercare plan. \n * Keep the horse moving quietly while overall breathing and temperature recover. \n * Check for heat, swelling, pain or lameness and seek advice if anything is abnormal.",
       "important": "No"
     },
     {
@@ -1934,7 +1934,7 @@
       ],
       "number": 52,
       "question": "Explain four ways in which horse owners and carers can reduce their carbon hoofprints and footprints",
-      "answer": "",
+      "answer": "Share journeys, plan routes and avoid unnecessary vehicle trips. \n * Buy durable local products, repair equipment and reduce packaging. \n * Save water and electricity; use efficient lighting and maintain vehicles and machinery. \n * Manage grazing, manure and forage to protect soil, hedges, wildlife and watercourses.",
       "important": "No"
     },
     {
@@ -1946,7 +1946,7 @@
       ],
       "number": 54,
       "question": "Understand how to manage horse-related waste responsibly",
-      "answer": "",
+      "answer": "* Store manure where run-off cannot pollute drains or watercourses and arrange lawful composting or disposal. \n * Dispose of medicines, sharps and clinical waste through the correct authorised route. \n * Follow local rules for feed bags, baler twine, chemical containers and fallen stock.",
       "important": "No"
     }
   ]
