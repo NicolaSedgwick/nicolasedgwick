@@ -843,7 +843,98 @@
       ],
       "number": 34,
       "question": "Name this farrier tool:\n![c34-farrier-tool.jpg](images/c34-farrier-tool.jpg)",
-      "answer": "Rasp",
+      "answer": "Rasp \n DRESS THE FOOT / FINISH OFF \n\n Levels and shapes the hoof wall after cutting, then smooths the outer wall and the clenches. \n Recognition clue: A long, coarse file.",
+      "important": "No"
+    },
+    {
+      "id": "c35",
+      "theme": "Care",
+      "topic": "Farrier Tools",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 35,
+      "question": "Name this farrier tool:\n![c35-farrier-tool.jpg](images/c35-farrier-tool.jpg)",
+      "answer": "Buffer \n REMOVE THE SHOE \n\n Cuts or lifts the clenched-over ends of the nails before the shoe is pulled off. \n Recognition clue: Think: deal with the clenches first.",
+      "important": "No"
+    },
+    {
+      "id": "c36",
+      "theme": "Care",
+      "topic": "Farrier Tools",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 36,
+      "question": "Name this farrier tool:\n![c36-farrier-tool.jpg](images/c36-farrier-tool.jpg)",
+      "answer": "Pincers \n REMOVE THE SHOE \n\n Grip and pull off the shoe after the clenches have been raised or cut. They may also pull old nails. \n Recognition clue: Broad jaws grip the shoe.",
+      "important": "No"
+    },
+    {
+      "id": "c37",
+      "theme": "Care",
+      "topic": "Farrier Tools",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 37,
+      "question": "Name this farrier tool:\n![c37-farrier-tool.jpg](images/c37-farrier-tool.jpg)",
+      "answer": "Hoof cutters \n DRESS THE FOOT \n\n Remove excess hoof horn and help shape the foot before it is levelled with the rasp. \n Recognition clue: Also called hoof nippers.",
+      "important": "No"
+    },
+    {
+      "id": "c38",
+      "theme": "Care",
+      "topic": "Farrier Tools",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 38,
+      "question": "Name this farrier tool:\n![c38-farrier-tool.jpg](images/c38-farrier-tool.jpg)",
+      "answer": "Clenching tool \n FINISH OFF \n\n Bends and tightens the ends of the horseshoe nails against the hoof wall. \n Recognition clue: Makes the clenches firm and smooth.",
+      "important": "No"
+    },
+    {
+      "id": "c39",
+      "theme": "Care",
+      "topic": "Farrier Tools",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 39,
+      "question": "Name this farrier tool:\n![c39-farrier-tool.jpg](images/c39-farrier-tool.jpg)",
+      "answer": "Nail pullers \n REMOVE THE SHOE \n\n Remove an individual horseshoe nail so it can be pulled out through the shoe. \n Recognition clue: Narrow jaws grip one nail.",
+      "important": "No"
+    },
+    {
+      "id": "c40",
+      "theme": "Care",
+      "topic": "Farrier Tools",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 40,
+      "question": "Name this farrier tool:\n![c40-farrier-tool.jpg](images/c40-farrier-tool.jpg)",
+      "answer": "Hoof knife \n DRESS THE FOOT \n\n Trims loose or overgrown horn from the sole and frog. \n Recognition clue: A sharp, curved blade; for trained use.",
+      "important": "No"
+    },
+    {
+      "id": "c41",
+      "theme": "Care",
+      "topic": "Farrier Tools",
+      "test_level": [
+        "C",
+	"C+"
+      ],
+      "number": 41,
+      "question": "Name this farrier tool:\n![c41-farrier-tool.jpg](images/c41-farrier-tool.jpg)",
+      "answer": "Shoeing hammer \n  FIT THE SHOE \n\n Drives horseshoe nails through the shoe and hoof wall. A farrier may also use it when shaping a hot shoe. \n Recognition clue: Small head with a claw or pointed end.",
       "important": "No"
     },
     {
